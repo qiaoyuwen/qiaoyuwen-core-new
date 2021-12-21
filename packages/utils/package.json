@@ -1,0 +1,17 @@
+{
+  "name": "@qiaoyuwen-core/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf -rf ./dist && tsc"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "~4.5.4",
+    "rimraf": "~3.0.2",
+    "@qiaoyuwen-core/eslint": "~1.0.0",
+    "@rushstack/eslint-patch": "~1.1.0"
+  }
+}
