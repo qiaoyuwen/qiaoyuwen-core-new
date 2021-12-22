@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rimraf -rf ./dist && tsc",
+    "build": "rimraf -rf ./dist && tsc --project tsconfig.build.json",
     "test": "jest -w 16 --coverage",
     "test-live": "DEBUG_MODE=1 jest --watch tests/types-spec.ts"
   },

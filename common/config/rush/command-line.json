@@ -24,6 +24,12 @@
       "summary": "执行lint-staged",
       "autoinstallerName": "rush-lint",
       "shellCommand": "lint-staged"
+    },
+    {
+      "name": "start-docs",
+      "commandKind": "global",
+      "summary": "启动本地文档",
+      "shellCommand": "cd packages/docs && rushx start"
     }
     // {
     //   /**
