@@ -2,7 +2,7 @@
   "name": "@qiaoyuwen-core/utils",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rimraf -rf ./dist && tsc"
   },

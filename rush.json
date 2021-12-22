@@ -394,6 +394,10 @@
       "projectFolder": "packages/eslint"
     },
     {
+      "packageName": "@qiaoyuwen-core/docs",
+      "projectFolder": "packages/docs"
+    },
+    {
       "packageName": "@qiaoyuwen-core/utils",
       "projectFolder": "packages/utils"
     }
