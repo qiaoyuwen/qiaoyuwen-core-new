@@ -1,5 +1,4 @@
-export const getType = (obj: unknown) => Object.prototype.toString.call(obj);
-
+const getType = (obj: unknown) => Object.prototype.toString.call(obj);
 const isType =
   <T>(type: string | string[]) =>
   (obj: unknown): obj is T =>

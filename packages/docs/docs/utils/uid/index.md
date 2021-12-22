@@ -1,9 +1,5 @@
 ---
 title: uid
-nav:
-  title: utils
-  path: /utils
-order: 1
 ---
 
 # uid

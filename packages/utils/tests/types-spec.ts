@@ -1,5 +1,4 @@
 import {
-  getType,
   isFn,
   isWindow,
   isNull,
@@ -16,10 +15,6 @@ import {
   isValid,
 } from '../src/index';
 describe('types', () => {
-  it('getType', () => {
-    expect(getType([])).toBe('[object Array]');
-  });
-
   it('isFn', () => {
     const arrayFn = () => {};
     expect(isFn(arrayFn)).toBeTruthy();
