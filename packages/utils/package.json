@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rimraf -rf ./dist && tsc",
     "test": "jest -w 16 --coverage",
-    "test-live": "DEBUG_MODE=1 jest --watch src/uid/__tests__/index.test.ts"
+    "test-live": "DEBUG_MODE=1 jest --watch tests/types-spec.ts"
   },
   "author": "",
   "license": "MIT",
