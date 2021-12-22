@@ -1,4 +1,4 @@
-import { uid } from '../../index';
+import { uid } from '../src/index';
 describe('uid', () => {
   it('default length', () => {
     expect(11).toBe(uid().length);
