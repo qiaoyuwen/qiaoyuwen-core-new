@@ -8,3 +8,4 @@ export * from './selection';
 export * from './timeout';
 export * from './pagination';
 export * from './size';
+export * from './virtual-list';
