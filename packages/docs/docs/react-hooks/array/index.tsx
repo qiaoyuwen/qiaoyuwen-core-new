@@ -15,22 +15,25 @@ const Component: FunctionComponent = () => {
 
   const onPushClick = useCallback(() => {
     push(`${Math.random()}`);
-  }, []);
+  }, [push]);
 
   const onReverseClick = useCallback(() => {
     reverse();
-  }, []);
+  }, [reverse]);
 
-  const renderItem = useCallback((item: string) => {
-    return (
-      <List.Item>
-        <span style={{ width: 250 }}>{item}</span>
-        <Button type="primary" danger onClick={onRemoveClick}>
-          删除
-        </Button>
-      </List.Item>
-    );
-  }, []);
+  const renderItem = useCallback(
+    (item: string) => {
+      return (
+        <List.Item>
+          <span style={{ width: 250 }}>{item}</span>
+          <Button type="primary" danger onClick={onRemoveClick}>
+            删除
+          </Button>
+        </List.Item>
+      );
+    },
+    [onRemoveClick],
+  );
 
   return (
     <>
