@@ -32,7 +32,8 @@
     "antd": "~4.17.4",
     "@qiaoyuwen-core/utils": "~1.0.0",
     "react-router": "~6.2.1",
-    "webpack": "~5.65.0"
+    "webpack": "~5.65.0",
+    "@qiaoyuwen-core/react-hooks": "~1.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",

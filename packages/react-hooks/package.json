@@ -2,7 +2,7 @@
   "name": "@qiaoyuwen-core/react-hooks",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rimraf -rf ./dist && tsc --project tsconfig.build.json",
     "test": "jest -w 16 --coverage",
@@ -11,9 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "react": "~17.0.2",
-    "use-immer": "~0.6.0",
-    "immer": "~9.0.7"
+    "react": "~17.0.2"
   },
   "devDependencies": {
     "typescript": "~4.5.4",
@@ -38,7 +36,8 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.{ts,js}",
-      "!src/**/index.ts",
+      "!src/index.ts",
+      "!src/methods/index.ts",
       "!**/node_modules/**"
     ],
     "testRegex": "/tests/.*-spec\\.ts?$",
