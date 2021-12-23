@@ -5,30 +5,36 @@ import { useLocalStorage } from '../src/storage/index';
  * @jest-environment jsdom
  */
 
+const TestKey: string = 'TestKey';
+
 describe('useLocalStorage', () => {
+  beforeAll(() => {
+    window.localStorage.removeItem(TestKey);
+  });
+
   test('initial value', () => {
-    const { result } = renderHook(() => useLocalStorage('testKey', 'testValue'));
+    const { result } = renderHook(() => useLocalStorage(TestKey, 'testValue'));
     const [value] = result.current;
     expect(value).toBe('testValue');
   });
 
   test('existing value', () => {
-    window.localStorage.setItem('testKey', JSON.stringify('originTestValue'));
-    const { result } = renderHook(() => useLocalStorage('testKey', 'testValue'));
+    window.localStorage.setItem(TestKey, JSON.stringify('originTestValue'));
+    const { result } = renderHook(() => useLocalStorage(TestKey, 'testValue'));
     const [value] = result.current;
     expect(value).toBe('originTestValue');
   });
 
   test('inital value on parse error', () => {
-    window.localStorage.setItem('testKey', 'invalid json');
-    const { result } = renderHook(() => useLocalStorage('testKey', 'testValue'));
+    window.localStorage.setItem(TestKey, 'invalid json');
+    const { result } = renderHook(() => useLocalStorage(TestKey, 'testValue'));
     expect(result.current[0]).toBe('testValue');
   });
 
   test('listen on change', () => {
-    const { result } = renderHook(() => useLocalStorage('testKey', 'testValue'));
+    const { result } = renderHook(() => useLocalStorage(TestKey, 'testValue'));
     const event = new window.StorageEvent('storage', {
-      key: 'testKey',
+      key: TestKey,
       oldValue: '"testValue"',
       newValue: '"newTestValue"',
       storageArea: window.localStorage,
@@ -40,9 +46,9 @@ describe('useLocalStorage', () => {
   });
 
   test('listen on change value parse error', () => {
-    const { result } = renderHook(() => useLocalStorage('testKey', 'testValue'));
+    const { result } = renderHook(() => useLocalStorage(TestKey, 'testValue'));
     const event = new window.StorageEvent('storage', {
-      key: 'testKey',
+      key: TestKey,
       oldValue: '"testValue"',
       newValue: 'invalid json',
       storageArea: window.localStorage,
@@ -54,9 +60,9 @@ describe('useLocalStorage', () => {
   });
 
   test('listen on change value null', () => {
-    const { result } = renderHook(() => useLocalStorage('testKey', 'testValue'));
+    const { result } = renderHook(() => useLocalStorage(TestKey, 'testValue'));
     const event = new window.StorageEvent('storage', {
-      key: 'testKey',
+      key: TestKey,
       oldValue: '"testValue"',
       newValue: null,
       storageArea: window.localStorage,
@@ -68,7 +74,7 @@ describe('useLocalStorage', () => {
   });
 
   test('ignore unexpected change key', () => {
-    const { result } = renderHook(() => useLocalStorage('testKey', 'testValue'));
+    const { result } = renderHook(() => useLocalStorage(TestKey, 'testValue'));
     const event = new window.StorageEvent('storage', {
       key: 'otherKey',
       oldValue: '"value"',
@@ -82,9 +88,9 @@ describe('useLocalStorage', () => {
   });
 
   test('ignore session storage change', () => {
-    const { result } = renderHook(() => useLocalStorage('testKey', 'testValue'));
+    const { result } = renderHook(() => useLocalStorage(TestKey, 'testValue'));
     const event = new window.StorageEvent('storage', {
-      key: 'testKey',
+      key: TestKey,
       oldValue: '"testValue"',
       newValue: '"newTestValue"',
       storageArea: window.sessionStorage,
@@ -96,7 +102,7 @@ describe('useLocalStorage', () => {
   });
 
   test('set local storage value', () => {
-    const { result } = renderHook(() => useLocalStorage('testKey', 'testValue'));
+    const { result } = renderHook(() => useLocalStorage(TestKey, 'testValue'));
     act(() => {
       result.current[1]('newTestValue');
     });
