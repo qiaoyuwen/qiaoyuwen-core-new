@@ -15,5 +15,6 @@ module.exports = {
         allowBind: false,
       },
     ],
+    '@rushstack/no-new-null': 'off',
   },
 };

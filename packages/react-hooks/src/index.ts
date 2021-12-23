@@ -7,3 +7,4 @@ export * from './set';
 export * from './selection';
 export * from './timeout';
 export * from './pagination';
+export * from './size';
