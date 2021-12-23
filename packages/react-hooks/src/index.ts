@@ -5,3 +5,4 @@ export * from './storage';
 export * from './number';
 export * from './set';
 export * from './selection';
+export * from './timeout';
