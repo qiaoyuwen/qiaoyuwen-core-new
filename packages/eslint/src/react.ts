@@ -7,5 +7,13 @@ module.exports = {
   rules: {
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'warn', // Checks deps of Hooks
+    'react/jsx-no-bind': [
+      'warn',
+      {
+        allowArrowFunctions: true,
+        allowFunctions: false,
+        allowBind: false,
+      },
+    ],
   },
 };
