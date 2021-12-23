@@ -1,0 +1,51 @@
+{
+  "name": "@qiaoyuwen-core/react-hooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf -rf ./dist && tsc --project tsconfig.build.json",
+    "test": "jest -w 16 --coverage",
+    "test-live": "DEBUG_MODE=1 jest --watch tests/methods-spec.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "~17.0.2",
+    "use-immer": "~0.6.0",
+    "immer": "~9.0.7"
+  },
+  "devDependencies": {
+    "typescript": "~4.5.4",
+    "rimraf": "~3.0.2",
+    "@qiaoyuwen-core/eslint": "~1.0.0",
+    "@rushstack/eslint-patch": "~1.1.0",
+    "@types/react": "~17.0.37",
+    "jest": "~26.0.1",
+    "ts-jest": "~26.0.0",
+    "@types/jest": "~26.0.1",
+    "jest-electron": "~0.1.12",
+    "@testing-library/react-hooks": "~7.0.2"
+  },
+  "jest": {
+    "runner": "jest-electron/runner",
+    "testEnvironment": "jest-electron/environment",
+    "testTimeout": 30000,
+    "preset": "ts-jest",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{ts,js}",
+      "!src/**/index.ts",
+      "!**/node_modules/**"
+    ],
+    "testRegex": "/tests/.*-spec\\.ts?$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ]
+  }
+}

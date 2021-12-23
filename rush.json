@@ -400,6 +400,10 @@
     {
       "packageName": "@qiaoyuwen-core/utils",
       "projectFolder": "packages/utils"
+    },
+    {
+      "packageName": "@qiaoyuwen-core/react-hooks",
+      "projectFolder": "packages/react-hooks"
     }
     // {
     //   /**
