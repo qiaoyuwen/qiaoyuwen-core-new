@@ -31,7 +31,7 @@ const Component: FunctionComponent = () => {
           <InputNumber min={1} max={10000} defaultValue={value} onChange={onChange} />
           <Button onClick={() => scrollTo(value - 1)}>滚动</Button>
         </Space>
-        <div {...(containerProps as any)} style={{ height: '300px', overflow: 'auto' }}>
+        <div {...containerProps} style={{ height: '300px', overflow: 'auto' }}>
           <div {...wrapperProps}>
             {list.map((item) => (
               <div

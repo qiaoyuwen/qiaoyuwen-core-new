@@ -84,7 +84,7 @@ const Component: FunctionComponent = () => {
           <Button onClick={() => scrollTo(value - 1)}>滚动</Button>
         </Space>
         <DragDropContext onDragEnd={onDragEnd}>
-          <div {...(containerProps as any)} style={{ height: '300px', overflow: 'auto' }}>
+          <div {...containerProps} style={{ height: '300px', overflow: 'auto' }}>
             <Droppable
               droppableId="droppable"
               mode="virtual"

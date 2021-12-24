@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/naming-convention */
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSize } from '../size';
@@ -124,10 +125,10 @@ export function useVirtualList<T>(list: T[], options: IOption) {
     })),
     scrollTo,
     containerProps: {
-      ref: (ele: HTMLElement) => {
+      ref: (ele: any) => {
         containerRef.current = ele;
       },
-      onScroll: (e: Event) => {
+      onScroll: (e: any) => {
         e.preventDefault();
         calculateRange();
       },
