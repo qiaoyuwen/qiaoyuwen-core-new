@@ -14,6 +14,7 @@ import {
   isRegExp,
   isValid,
 } from '../src/index';
+
 describe('types', () => {
   it('isFn', () => {
     const arrayFn = () => {};
