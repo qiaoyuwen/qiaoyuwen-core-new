@@ -6,7 +6,7 @@
 import React, { ChangeEvent, FunctionComponent, useCallback } from 'react';
 import { Space, Input, Button } from 'antd';
 import 'antd/dist/antd.css';
-import { useLocalStorage } from '@qiaoyuwen-core/react-hooks';
+import { useLocalStorage } from '@qiaoyuwen-core-next/react-hooks';
 
 const Component: FunctionComponent = () => {
   const [value, setValue] = useLocalStorage('localStorageDemo', '');

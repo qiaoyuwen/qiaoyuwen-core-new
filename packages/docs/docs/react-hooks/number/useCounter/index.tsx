@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useCallback } from 'react';
 import { Space, Button, InputNumber } from 'antd';
 import 'antd/dist/antd.css';
-import { useCounter } from '@qiaoyuwen-core/react-hooks';
+import { useCounter } from '@qiaoyuwen-core-next/react-hooks';
 
 const Component: FunctionComponent = () => {
   const [count, { inc, dec, reset }] = useCounter(0, {

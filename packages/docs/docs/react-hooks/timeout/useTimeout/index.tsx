@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { useState } from 'react';
 import 'antd/dist/antd.css';
-import { useTimeout } from '@qiaoyuwen-core/react-hooks';
+import { useTimeout } from '@qiaoyuwen-core-next/react-hooks';
 
 const Component: FunctionComponent = () => {
   const [color, setColor] = useState('red');

@@ -390,19 +390,19 @@
    */
   "projects": [
     {
-      "packageName": "@qiaoyuwen-core/eslint",
+      "packageName": "@qiaoyuwen-core-next/eslint",
       "projectFolder": "packages/eslint"
     },
     {
-      "packageName": "@qiaoyuwen-core/docs",
+      "packageName": "@qiaoyuwen-core-next/docs",
       "projectFolder": "packages/docs"
     },
     {
-      "packageName": "@qiaoyuwen-core/utils",
+      "packageName": "@qiaoyuwen-core-next/utils",
       "projectFolder": "packages/utils"
     },
     {
-      "packageName": "@qiaoyuwen-core/react-hooks",
+      "packageName": "@qiaoyuwen-core-next/react-hooks",
       "projectFolder": "packages/react-hooks"
     }
     // {

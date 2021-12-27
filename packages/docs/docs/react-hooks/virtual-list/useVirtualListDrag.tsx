@@ -11,7 +11,7 @@ import React, { useCallback, FunctionComponent } from 'react';
 import { useState } from 'react';
 import { Button, Space, InputNumber } from 'antd';
 import 'antd/dist/antd.css';
-import { useVirtualList } from '@qiaoyuwen-core/react-hooks';
+import { useVirtualList } from '@qiaoyuwen-core-next/react-hooks';
 import type { DropResult } from 'react-beautiful-dnd';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import { DragOutlined } from '@ant-design/icons';

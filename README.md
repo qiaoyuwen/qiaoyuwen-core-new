@@ -12,6 +12,12 @@
 
 https://qiaoyuwen.github.io/qiaoyuwen-core/
 
+## 初始化
+```bash
+rush install #安装依赖
+rush build #打包
+```
+
 ## 常用命令
 
 | yarn | rush | 描述 |

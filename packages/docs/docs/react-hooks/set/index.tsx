@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Space, Button, List } from 'antd';
 import 'antd/dist/antd.css';
-import { useSet } from '@qiaoyuwen-core/react-hooks';
+import { useSet } from '@qiaoyuwen-core-next/react-hooks';
 
 const Component: FunctionComponent = () => {
   const [data, { add, remove, clear }] = useSet<string>([]);

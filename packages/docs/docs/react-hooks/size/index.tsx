@@ -5,7 +5,7 @@
 import React, { FunctionComponent, useRef } from 'react';
 import { Space } from 'antd';
 import 'antd/dist/antd.css';
-import { useSize } from '@qiaoyuwen-core/react-hooks';
+import { useSize } from '@qiaoyuwen-core-next/react-hooks';
 
 const Component: FunctionComponent = () => {
   const elRef = useRef(null);

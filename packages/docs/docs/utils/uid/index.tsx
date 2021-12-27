@@ -1,6 +1,6 @@
 import React, { useCallback, FunctionComponent, useState } from 'react';
 import { Button, Space } from 'antd';
-import { uid } from '@qiaoyuwen-core/utils';
+import { uid } from '@qiaoyuwen-core-next/utils';
 import 'antd/dist/antd.css';
 
 const Demo: FunctionComponent = () => {

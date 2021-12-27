@@ -1,7 +1,7 @@
 require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
-  extends: [require.resolve('@qiaoyuwen-core/eslint/dist/node')],
+  extends: [require.resolve('@qiaoyuwen-core-next/eslint/dist/node')],
   parserOptions: { tsconfigRootDir: __dirname },
   rules: {
     'no-bitwise': 'off',

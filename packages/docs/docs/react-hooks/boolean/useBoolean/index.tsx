@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Space, Checkbox, Button } from 'antd';
 import 'antd/dist/antd.css';
-import { useBoolean } from '@qiaoyuwen-core/react-hooks';
+import { useBoolean } from '@qiaoyuwen-core-next/react-hooks';
 
 const Component: FunctionComponent = () => {
   const [checked, { setTrue, setFalse, toggle }] = useBoolean(false);

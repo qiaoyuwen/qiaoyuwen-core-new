@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import 'antd/dist/antd.css';
-import { useCountdown } from '@qiaoyuwen-core/react-hooks';
+import { useCountdown } from '@qiaoyuwen-core-next/react-hooks';
 import { Button, Space } from 'antd';
 
 const Component: FunctionComponent = () => {

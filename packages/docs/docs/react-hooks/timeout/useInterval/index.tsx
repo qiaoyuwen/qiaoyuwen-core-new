@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState } from 'react';
 import 'antd/dist/antd.css';
-import { useInterval } from '@qiaoyuwen-core/react-hooks';
+import { useInterval } from '@qiaoyuwen-core-next/react-hooks';
 
 const Component: FunctionComponent = () => {
   const [count, setCount] = useState(0);

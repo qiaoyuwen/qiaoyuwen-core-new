@@ -1,5 +1,5 @@
 {
-  "name": "@qiaoyuwen-core/utils",
+  "name": "@qiaoyuwen-core-next/utils",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -13,7 +13,7 @@
   "devDependencies": {
     "typescript": "~4.5.4",
     "rimraf": "~3.0.2",
-    "@qiaoyuwen-core/eslint": "~1.0.0",
+    "@qiaoyuwen-core-next/eslint": "~1.0.0",
     "@rushstack/eslint-patch": "~1.1.0",
     "jest": "~26.0.1",
     "ts-jest": "~26.0.0",

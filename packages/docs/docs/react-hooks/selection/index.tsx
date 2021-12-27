@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Space, Checkbox } from 'antd';
 import 'antd/dist/antd.css';
-import { useSelection } from '@qiaoyuwen-core/react-hooks';
+import { useSelection } from '@qiaoyuwen-core-next/react-hooks';
 
 const Component: FunctionComponent = () => {
   const data = [1, 2, 3, 4];

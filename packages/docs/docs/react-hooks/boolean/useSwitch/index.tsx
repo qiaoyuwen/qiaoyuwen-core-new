@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Space, Switch, Button } from 'antd';
 import 'antd/dist/antd.css';
-import { useSwitch } from '@qiaoyuwen-core/react-hooks';
+import { useSwitch } from '@qiaoyuwen-core-next/react-hooks';
 
 const Component: FunctionComponent = () => {
   const [checked, { on, off, toggle }] = useSwitch(false);

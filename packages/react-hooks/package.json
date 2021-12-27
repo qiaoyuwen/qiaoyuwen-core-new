@@ -1,5 +1,5 @@
 {
-  "name": "@qiaoyuwen-core/react-hooks",
+  "name": "@qiaoyuwen-core-next/react-hooks",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
   "devDependencies": {
     "typescript": "~4.5.4",
     "rimraf": "~3.0.2",
-    "@qiaoyuwen-core/eslint": "~1.0.0",
+    "@qiaoyuwen-core-next/eslint": "~1.0.0",
     "@rushstack/eslint-patch": "~1.1.0",
     "@types/react": "~17.0.37",
     "jest": "~26.0.1",

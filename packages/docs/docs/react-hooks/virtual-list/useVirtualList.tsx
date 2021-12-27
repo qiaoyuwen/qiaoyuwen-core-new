@@ -9,7 +9,7 @@ import React, { useCallback, FunctionComponent } from 'react';
 import { useState } from 'react';
 import { Button, Space, InputNumber } from 'antd';
 import 'antd/dist/antd.css';
-import { useVirtualList } from '@qiaoyuwen-core/react-hooks';
+import { useVirtualList } from '@qiaoyuwen-core-next/react-hooks';
 
 const getItems = (length: number = 10000): string[] => {
   return Array.from({ length }).map((_, index) => `${index + 1}`);

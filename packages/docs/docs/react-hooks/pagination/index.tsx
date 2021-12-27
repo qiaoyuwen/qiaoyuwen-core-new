@@ -1,7 +1,7 @@
 import type { FunctionComponent } from 'react';
 import React from 'react';
 import 'antd/dist/antd.css';
-import { useInfinitePagination } from '@qiaoyuwen-core/react-hooks';
+import { useInfinitePagination } from '@qiaoyuwen-core-next/react-hooks';
 import { Button, List, Space } from 'antd';
 import InfiniteScroll from 'react-infinite-scroller';
 
