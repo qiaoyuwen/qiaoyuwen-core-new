@@ -18,6 +18,24 @@ rush install #安装依赖
 rush build #打包
 ```
 
+## 工作流
+```bash
+# 从 git 拉取最新变更
+$ git pull
+
+# 更新 NPM 依赖
+$ rush update
+
+# 重新打包 @qiaoyuwen-core-next/xxx 依赖的项目（不含包其本身）
+$ rush rebuild -T @qiaoyuwen-core-next/xxx
+
+# 进入指定项目目录
+$ cd ./packages/xxx
+
+# 启动项目 ​
+$ rushx start # or rushx xxx
+```
+
 ## 常用命令
 
 | yarn | rush | 描述 |
@@ -30,9 +48,3 @@ rush build #打包
 | - | rush build | 执行文件存在变更（基于 git）的项目的 build 脚本<br>rush build -t @monorepo/app1 表示只构建 @monorepo/app1 及其依赖的 package<br>rush build -T @monorepo/app1 表示只构建 @monorepo/app1 依赖的 package，不包含其本身 |
 | - | rush rebuild | 默认执行所有项目的 build 脚本 |
 | yarn xxx(自定义脚本) | rushx xxx(自定义脚本) | yarn xxx 执行当前目录下 package.json 中的 xxx 脚本(npm scripts)<br>rushx xxx 同理。可以直接执行 rushx 查看当前项目所支持的脚本命令。 |
-
-## 自定义命令
-
-```bash
-rush start-docs #启动本地文档服务
-```
