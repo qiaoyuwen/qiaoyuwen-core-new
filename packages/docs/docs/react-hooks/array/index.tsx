@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 import { Space, Button, List } from 'antd';
 import 'antd/dist/antd.css';
 import { useArray } from '@qiaoyuwen-core-next/react-hooks';
