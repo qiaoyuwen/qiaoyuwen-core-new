@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { isArr, isWindow, Subscribable } from '.';
+import { isArr, isWindow } from '.';
 import {
   DRIVER_INSTANCES_SYMBOL,
   EventContainer,
@@ -9,7 +9,7 @@ import {
   IEventDriverClass,
   IEventEffect,
 } from './event-driver';
-import { ISubscriber } from './subscribable';
+import { ISubscriber, Subscribable } from './subscribable';
 
 const ATTACHED_SYMBOL = Symbol('ATTACHED_SYMBOL');
 

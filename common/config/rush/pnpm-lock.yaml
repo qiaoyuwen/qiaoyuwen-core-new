@@ -52,6 +52,7 @@ specifiers:
   react-dom: ~17.0.2
   react-infinite-scroller: ~1.2.4
   react-router: ~6.2.1
+  requestidlecallback: ~0.3.0
   rimraf: ~3.0.2
   swr: ~1.1.1
   ts-jest: ~26.0.0
@@ -111,6 +112,7 @@ dependencies:
   react-dom: 17.0.2
   react-infinite-scroller: 1.2.4
   react-router: 6.2.1
+  requestidlecallback: 0.3.0
   rimraf: 3.0.2
   swr: 1.1.2
   ts-jest: 26.0.0_jest@26.0.1
@@ -4467,6 +4469,10 @@ packages:
       '@types/prop-types': 15.7.4
       '@types/scheduler': 0.16.2
       csstype: 3.0.10
+    dev: false
+
+  /@types/requestidlecallback/0.3.4:
+    resolution: {integrity: sha512-aTSyiZuRemRLTQkJPb25L7A4/eR2Teo5l4yJ1V6P3+MFxEZckTDkNKNtr/V1zEOMzS6H8DgxF22U6jPAPrzQvw==}
     dev: false
 
   /@types/resolve/1.17.1:
@@ -12561,6 +12567,7 @@ packages:
     resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
     engines: {node: '>=4'}
     hasBin: true
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -18867,7 +18874,7 @@ packages:
     dev: false
 
   file:projects/docs.tgz_ts-node@10.5.0:
-    resolution: {integrity: sha512-J8MwSbDTiJLCYq8Bz1z1t+GEwlEPkbqacgGoo21qvNaSGZoLcc+hipGxKA+tD3cqAC83ouQUB4JXbF9qbFmbpA==, tarball: file:projects/docs.tgz}
+    resolution: {integrity: sha512-U+LrcqU6pItC53+WEdgj7Vm8cUY2k6MxmtaSgOORLkc4L2f/zUB8y1yh2JgM3LcYvhn0OdgviSdb0deiHffHEA==, tarball: file:projects/docs.tgz}
     id: file:projects/docs.tgz
     name: '@rush-temp/docs'
     version: 0.0.0
@@ -18967,15 +18974,17 @@ packages:
     dev: false
 
   file:projects/utils.tgz_ts-node@10.5.0:
-    resolution: {integrity: sha512-vHnpySAYscgHRwIfUukD7zCGL4biWmP0sJ1Kd2/Aa+uCCL0A1f5lbfJq5bLQy4IK7L8oyKDT4ntxQrtloJI7lQ==, tarball: file:projects/utils.tgz}
+    resolution: {integrity: sha512-ARt1S4rayxEnYGmbmwsMMFG4QNtYLcQCQuKM1zUnOMF7wDOvQ0WyXuKBTBKeWUcU0FmGRHkPElDAsPvfJN85kQ==, tarball: file:projects/utils.tgz}
     id: file:projects/utils.tgz
     name: '@rush-temp/utils'
     version: 0.0.0
     dependencies:
       '@rushstack/eslint-patch': 1.1.0
       '@types/jest': 26.0.24
+      '@types/requestidlecallback': 0.3.4
       jest: 26.0.1_ts-node@10.5.0
       jest-electron: 0.1.12_jest@26.0.1
+      requestidlecallback: 0.3.0
       rimraf: 3.0.2
       ts-jest: 26.0.0_jest@26.0.1+typescript@4.5.5
       typescript: 4.5.5

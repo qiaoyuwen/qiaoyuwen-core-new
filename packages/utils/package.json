@@ -18,7 +18,8 @@
     "jest": "~26.0.1",
     "ts-jest": "~26.0.0",
     "@types/jest": "~26.0.1",
-    "jest-electron": "~0.1.12"
+    "jest-electron": "~0.1.12",
+    "@types/requestidlecallback": "~0.3.4"
   },
   "jest": {
     "runner": "jest-electron/runner",
@@ -40,5 +41,8 @@
       "js",
       "json"
     ]
+  },
+  "dependencies": {
+    "requestidlecallback": "~0.3.0"
   }
 }
