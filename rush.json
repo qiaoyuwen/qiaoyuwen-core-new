@@ -414,6 +414,10 @@
       "projectFolder": "packages/designer-react"
     },
     {
+      "packageName": "@qiaoyuwen-core-next/designer-antd",
+      "projectFolder": "packages/designer-antd"
+    },
+    {
       "packageName": "@qiaoyuwen-core-next/scripts",
       "projectFolder": "packages/scripts"
     }
