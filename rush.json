@@ -408,6 +408,14 @@
     {
       "packageName": "@qiaoyuwen-core-next/designer-core",
       "projectFolder": "packages/designer-core"
+    },
+    {
+      "packageName": "@qiaoyuwen-core-next/designer-react",
+      "projectFolder": "packages/designer-react"
+    },
+    {
+      "packageName": "@qiaoyuwen-core-next/scripts",
+      "projectFolder": "packages/scripts"
     }
     // {
     //   /**
