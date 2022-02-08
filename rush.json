@@ -404,6 +404,10 @@
     {
       "packageName": "@qiaoyuwen-core-next/react-hooks",
       "projectFolder": "packages/react-hooks"
+    },
+    {
+      "packageName": "@qiaoyuwen-core-next/designer-core",
+      "projectFolder": "packages/designer-core"
     }
     // {
     //   /**
