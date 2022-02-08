@@ -418,6 +418,10 @@
       "projectFolder": "packages/designer-antd"
     },
     {
+      "packageName": "@qiaoyuwen-core-next/designer-playground",
+      "projectFolder": "packages/designer-playground"
+    },
+    {
       "packageName": "@qiaoyuwen-core-next/scripts",
       "projectFolder": "packages/scripts"
     }
