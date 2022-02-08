@@ -1,6 +1,5 @@
 import 'antd/dist/antd.less'
-import React, { useMemo } from 'react'
-import ReactDOM from 'react-dom'
+import { useMemo } from 'react'
 import {
   Designer,
   DesignerToolsWidget,
@@ -18,10 +17,6 @@ import {
   SettingsPanel,
   ComponentTreeWidget,
 } from '@qiaoyuwen-core-next/designer-react'
-import {
-  SettingsForm,
-  setNpmCDNRegistry,
-} from '@designable/react-settings-form'
 import {
   createDesigner,
   GlobalRegistry,
@@ -65,8 +60,6 @@ import {
   FormLayout,
   FormGrid,
 } from '@qiaoyuwen-core-next/designer-antd'
-
-setNpmCDNRegistry('//unpkg.com')
 
 GlobalRegistry.registerDesignerLocales({
   'zh-CN': {
@@ -114,6 +107,7 @@ const App = () => {
       }),
     []
   )
+
   return (
     <Designer engine={engine}>
       <StudioPanel logo={<LogoWidget />} actions={<ActionsWidget />}>
@@ -223,7 +217,6 @@ const App = () => {
           </WorkspacePanel>
         </Workspace>
         <SettingsPanel title="panels.PropertySettings">
-          <SettingsForm uploadAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" />
         </SettingsPanel>
       </StudioPanel>
     </Designer>
