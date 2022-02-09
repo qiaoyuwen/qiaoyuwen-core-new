@@ -18,7 +18,7 @@ import {
   ComponentTreeWidget,
 } from '@qiaoyuwen-core-next/designer-react';
 import { createDesigner, GlobalRegistry, Shortcut, KeyCode } from '@qiaoyuwen-core-next/designer-core';
-import { LogoWidget, ActionsWidget, PreviewWidget, SchemaEditorWidget, MarkupSchemaWidget } from './widgets';
+import { ActionsWidget, PreviewWidget, SchemaEditorWidget, MarkupSchemaWidget } from './widgets';
 import { saveSchema } from './service';
 import {
   Form,
@@ -102,7 +102,7 @@ const App = () => {
 
   return (
     <Designer engine={engine}>
-      <StudioPanel logo={<LogoWidget />} actions={<ActionsWidget />}>
+      <StudioPanel actions={<ActionsWidget />}>
         <CompositePanel>
           <CompositePanel.Item title="panels.Component" icon="Component">
             <ResourceWidget
