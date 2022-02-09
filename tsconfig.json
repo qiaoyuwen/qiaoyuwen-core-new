@@ -4,7 +4,7 @@
     "moduleResolution": "node",
     "jsx": "react-jsx",
     "module": "commonjs",
-    "lib": ["es7", "dom"],
+    "lib": ["es7", "es2017", "dom"],
     "target": "es6",
     "allowJs": false,
     "noUnusedLocals": false,

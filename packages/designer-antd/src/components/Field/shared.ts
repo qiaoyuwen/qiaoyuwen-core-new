@@ -3,7 +3,7 @@ import {
   ReactionsSetter,
   DataSourceSetter,
   ValidatorSetter,
-} from '@designable/formily-setters'
+} from '@qiaoyuwen-core-next/designer-setters'
 import { FormItemSwitcher } from '../../common/FormItemSwitcher'
 import { AllSchemas } from '../../schemas'
 

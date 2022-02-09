@@ -4,7 +4,6 @@ specifiers:
   '@ant-design/icons': ~4.7.0
   '@babel/parser': ~7.17.0
   '@designable/formily-setters': ~1.0.0-beta.43
-  '@designable/formily-transformer': ~1.0.0-beta.43
   '@formily/antd': ~2.0.9
   '@formily/core': ~2.0.9
   '@formily/json-schema': ~2.0.9
@@ -21,6 +20,7 @@ specifiers:
   '@rush-temp/designer-playground': file:./projects/designer-playground.tgz
   '@rush-temp/designer-react': file:./projects/designer-react.tgz
   '@rush-temp/designer-react-settings-form': file:./projects/designer-react-settings-form.tgz
+  '@rush-temp/designer-setters': file:./projects/designer-setters.tgz
   '@rush-temp/designer-transformer': file:./projects/designer-transformer.tgz
   '@rush-temp/docs': file:./projects/docs.tgz
   '@rush-temp/eslint': file:./projects/eslint.tgz
@@ -72,7 +72,6 @@ dependencies:
   '@ant-design/icons': 4.7.0_react-dom@17.0.2
   '@babel/parser': 7.17.0
   '@designable/formily-setters': 1.0.0-beta.43_e9b7861f79d47d68f15e2251b9c140d1
-  '@designable/formily-transformer': 1.0.0-beta.43_69d154ab3fedf51465e00f901f0705db
   '@formily/antd': 2.0.9_f1c2f792846d980052b021ef480acf2d
   '@formily/core': 2.0.9
   '@formily/json-schema': 2.0.9
@@ -86,9 +85,10 @@ dependencies:
   '@monaco-editor/react': 4.3.1_b70ea0ef9b69cc1a03f2b677db8a2644
   '@rush-temp/designer-antd': file:projects/designer-antd.tgz_301030a037906bff921753b06d073c68
   '@rush-temp/designer-core': file:projects/designer-core.tgz
-  '@rush-temp/designer-playground': file:projects/designer-playground.tgz_c1890371530d0deb8bd1eda29c96b980
+  '@rush-temp/designer-playground': file:projects/designer-playground.tgz
   '@rush-temp/designer-react': file:projects/designer-react.tgz_f1c2f792846d980052b021ef480acf2d
   '@rush-temp/designer-react-settings-form': file:projects/designer-react-settings-form.tgz
+  '@rush-temp/designer-setters': file:projects/designer-setters.tgz_f1c2f792846d980052b021ef480acf2d
   '@rush-temp/designer-transformer': file:projects/designer-transformer.tgz
   '@rush-temp/docs': file:projects/docs.tgz_ts-node@10.5.0
   '@rush-temp/eslint': file:projects/eslint.tgz
@@ -18887,14 +18887,12 @@ packages:
       typescript: 4.5.5
     dev: false
 
-  file:projects/designer-playground.tgz_c1890371530d0deb8bd1eda29c96b980:
-    resolution: {integrity: sha512-jp0Xyt87U8KaE+/RjNbhCv5oi2GXoTEwOtHCHCisr5kP3z7O7dHxHiiq+b6H+TPfPvQvL5DikGkJX1vK9x7z2g==, tarball: file:projects/designer-playground.tgz}
-    id: file:projects/designer-playground.tgz
+  file:projects/designer-playground.tgz:
+    resolution: {integrity: sha512-8cL7BQVNzjPD0fXvFZWW4Dqcmi1ik9PJrZ38DDGwloxBdk6QhTpHD3PuONj/R4Vxp5uqNAk2AGvWvLBUVXliaw==, tarball: file:projects/designer-playground.tgz}
     name: '@rush-temp/designer-playground'
     version: 0.0.0
     dependencies:
       '@ant-design/icons': 4.7.0_react-dom@17.0.2+react@17.0.2
-      '@designable/formily-transformer': 1.0.0-beta.43_69d154ab3fedf51465e00f901f0705db
       '@formily/antd': 2.0.9_0d649f383df13d0b5b62b8c23716fa46
       '@formily/core': 2.0.9
       '@formily/react': 2.0.9_47800d0925ea25b9c4b70a6c14c111e0
@@ -18907,9 +18905,6 @@ packages:
       rimraf: 3.0.2
       typescript: 4.5.5
     transitivePeerDependencies:
-      - '@formily/json-schema'
-      - '@formily/path'
-      - '@formily/reactive'
       - prop-types
       - react-is
     dev: false
@@ -18973,8 +18968,39 @@ packages:
       - react-is
     dev: false
 
+  file:projects/designer-setters.tgz_f1c2f792846d980052b021ef480acf2d:
+    resolution: {integrity: sha512-m6vwAMEO6tNWlLjH5j04Paqfw6PDy7ifXxd1Ps+yLzn0MgK+KPOTcG+XCtWuBFSt73XQUjs7YdOE+hvqfs3Iaw==, tarball: file:projects/designer-setters.tgz}
+    id: file:projects/designer-setters.tgz
+    name: '@rush-temp/designer-setters'
+    version: 0.0.0
+    dependencies:
+      '@ant-design/icons': 4.7.0_react-dom@17.0.2+react@17.0.2
+      '@formily/antd': 2.0.9_0d649f383df13d0b5b62b8c23716fa46
+      '@formily/core': 2.0.9
+      '@formily/json-schema': 2.0.9_typescript@4.5.5
+      '@formily/react': 2.0.9_47800d0925ea25b9c4b70a6c14c111e0
+      '@formily/reactive': 2.0.9
+      '@formily/reactive-react': 2.0.9_0662dad0de89675021e62c5148859ef2
+      '@formily/shared': 2.0.9
+      '@types/react': 17.0.39
+      antd: 4.18.6_react-dom@17.0.2+react@17.0.2
+      classnames: 2.3.1
+      react: 17.0.2
+      rimraf: 3.0.2
+      ts-node: 10.5.0_typescript@4.5.5
+      typescript: 4.5.5
+    transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
+      - '@types/react-dom'
+      - prop-types
+      - react-dom
+      - react-is
+    dev: false
+
   file:projects/designer-transformer.tgz:
-    resolution: {integrity: sha512-b6ptxPaRZqDeB6TxNt7D4AmeCapMJ7knGLIpZ1Dg2H6zTOh0PlzKCQv0IPZPHwV074ZUlSMub9GOQGC8uAZttA==, tarball: file:projects/designer-transformer.tgz}
+    resolution: {integrity: sha512-y27x/4CamCjRjSXuhI3eIRjJZ76oAnhYvCTJuiJquvhkc4lATJTPhSiIFfxiLsdi6VRAqPK0gTM/GKhLCB3xqw==, tarball: file:projects/designer-transformer.tgz}
     name: '@rush-temp/designer-transformer'
     version: 0.0.0
     dependencies:

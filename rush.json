@@ -430,6 +430,10 @@
       "projectFolder": "packages/designer-transformer"
     },
     {
+      "packageName": "@qiaoyuwen-core-next/designer-setters",
+      "projectFolder": "packages/designer-setters"
+    },
+    {
       "packageName": "@qiaoyuwen-core-next/scripts",
       "projectFolder": "packages/scripts"
     }
