@@ -57,6 +57,7 @@ GlobalRegistry.registerDesignerLocales({
   'zh-CN': {
     sources: {
       Inputs: '输入控件',
+      MobileInputs: '移动端输入控件',
       Layouts: '布局组件',
       Arrays: '自增组件',
       Displays: '展示组件',
@@ -65,6 +66,7 @@ GlobalRegistry.registerDesignerLocales({
   'en-US': {
     sources: {
       Inputs: 'Inputs',
+      MobileInputs: 'MobileInputs',
       Layouts: 'Layouts',
       Arrays: 'Arrays',
       Displays: 'Displays',
@@ -73,6 +75,7 @@ GlobalRegistry.registerDesignerLocales({
   'ko-KR': {
     sources: {
       Inputs: '입력',
+      MobileInputs: 'MobileInputs',
       Layouts: '레이아웃',
       Arrays: '배열',
       Displays: '디스플레이',
@@ -125,6 +128,10 @@ const App = () => {
                 Switch,
                 ObjectContainer,
               ]}
+            />
+            <ResourceWidget
+              title="sources.MobileInputs"
+              sources={[]}
             />
             <ResourceWidget
               title="sources.Layouts"
