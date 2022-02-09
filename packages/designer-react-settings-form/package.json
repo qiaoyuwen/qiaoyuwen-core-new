@@ -1,0 +1,39 @@
+{
+  "name": "@qiaoyuwen-core-next/designer-react-settings-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf -rf ./dist && tsc --project tsconfig.build.json && ts-node copy"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "~3.0.2",
+    "typescript": "~4.5.5",
+    "@types/react": "~17.0.39",
+    "@qiaoyuwen-core-next/scripts": "~1.0.0",
+    "@types/react-color": "~3.0.6",
+    "ts-node": "~10.5.0"
+  },
+  "dependencies": {
+    "@monaco-editor/loader": "~1.2.0",
+    "@formily/react": "~2.0.9",
+    "@formily/antd": "~2.0.9",
+    "antd": "~4.18.6",
+    "react": "~17.0.2",
+    "@formily/core": "~2.0.9",
+    "classnames": "~2.3.1",
+    "@qiaoyuwen-core-next/utils": "~1.0.0",
+    "@qiaoyuwen-core-next/designer-react": "~1.0.0",
+    "@formily/shared": "~2.0.9",
+    "@formily/reactive": "~2.0.9",
+    "react-color": "~2.19.3",
+    "react-dom": "~17.0.2",
+    "@types/react-dom": "~17.0.11",
+    "@qiaoyuwen-core-next/designer-core": "~1.0.0",
+    "@monaco-editor/react": "~4.3.1",
+    "@babel/parser": "~7.17.0",
+    "monaco-editor": "~0.32.1"
+  }
+}

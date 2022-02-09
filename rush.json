@@ -422,6 +422,14 @@
       "projectFolder": "packages/designer-playground"
     },
     {
+      "packageName": "@qiaoyuwen-core-next/designer-react-settings-form",
+      "projectFolder": "packages/designer-react-settings-form"
+    },
+    {
+      "packageName": "@qiaoyuwen-core-next/designer-transformer",
+      "projectFolder": "packages/designer-transformer"
+    },
+    {
       "packageName": "@qiaoyuwen-core-next/scripts",
       "projectFolder": "packages/scripts"
     }

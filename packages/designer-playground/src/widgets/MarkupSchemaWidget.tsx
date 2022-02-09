@@ -1,6 +1,6 @@
 import React from 'react'
 import { TreeNode } from '@qiaoyuwen-core-next/designer-core'
-import { MonacoInput } from '@designable/react-settings-form'
+import { MonacoInput } from '@qiaoyuwen-core-next/designer-react-settings-form'
 import { isEmpty, isPlainObj } from '@formily/shared'
 
 export interface IMarkupSchemaWidgetProps {

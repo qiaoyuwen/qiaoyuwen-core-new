@@ -1,5 +1,5 @@
-import 'antd/dist/antd.less'
-import { useMemo } from 'react'
+import 'antd/dist/antd.less';
+import { useMemo } from 'react';
 import {
   Designer,
   DesignerToolsWidget,
@@ -16,21 +16,10 @@ import {
   ViewPanel,
   SettingsPanel,
   ComponentTreeWidget,
-} from '@qiaoyuwen-core-next/designer-react'
-import {
-  createDesigner,
-  GlobalRegistry,
-  Shortcut,
-  KeyCode,
-} from '@qiaoyuwen-core-next/designer-core'
-import {
-  LogoWidget,
-  ActionsWidget,
-  PreviewWidget,
-  SchemaEditorWidget,
-  MarkupSchemaWidget,
-} from './widgets'
-import { saveSchema } from './service'
+} from '@qiaoyuwen-core-next/designer-react';
+import { createDesigner, GlobalRegistry, Shortcut, KeyCode } from '@qiaoyuwen-core-next/designer-core';
+import { LogoWidget, ActionsWidget, PreviewWidget, SchemaEditorWidget, MarkupSchemaWidget } from './widgets';
+import { saveSchema } from './service';
 import {
   Form,
   Field,
@@ -59,7 +48,10 @@ import {
   FormCollapse,
   FormLayout,
   FormGrid,
-} from '@qiaoyuwen-core-next/designer-antd'
+} from '@qiaoyuwen-core-next/designer-antd';
+import { SettingsForm, setNpmCDNRegistry } from '@qiaoyuwen-core-next/designer-react-settings-form';
+
+setNpmCDNRegistry('//unpkg.com');
 
 GlobalRegistry.registerDesignerLocales({
   'zh-CN': {
@@ -86,7 +78,7 @@ GlobalRegistry.registerDesignerLocales({
       Displays: '디스플레이',
     },
   },
-})
+});
 
 const App = () => {
   const engine = useMemo(
@@ -99,14 +91,14 @@ const App = () => {
               [KeyCode.Control, KeyCode.S],
             ],
             handler(ctx) {
-              saveSchema(ctx.engine)
+              saveSchema(ctx.engine);
             },
           }),
         ],
         rootComponentName: 'Form',
       }),
-    []
-  )
+    [],
+  );
 
   return (
     <Designer engine={engine}>
@@ -136,19 +128,9 @@ const App = () => {
             />
             <ResourceWidget
               title="sources.Layouts"
-              sources={[
-                Card,
-                FormGrid,
-                FormTab,
-                FormLayout,
-                FormCollapse,
-                Space,
-              ]}
+              sources={[Card, FormGrid, FormTab, FormLayout, FormCollapse, Space]}
             />
-            <ResourceWidget
-              title="sources.Arrays"
-              sources={[ArrayCards, ArrayTable]}
-            />
+            <ResourceWidget title="sources.Arrays" sources={[ArrayCards, ArrayTable]} />
             <ResourceWidget title="sources.Displays" sources={[Text]} />
           </CompositePanel.Item>
           <CompositePanel.Item title="panels.OutlinedTree" icon="Outline">
@@ -162,9 +144,7 @@ const App = () => {
           <WorkspacePanel>
             <ToolbarPanel>
               <DesignerToolsWidget />
-              <ViewToolsWidget
-                use={['DESIGNABLE', 'JSONTREE', 'MARKUP', 'PREVIEW']}
-              />
+              <ViewToolsWidget use={['DESIGNABLE', 'JSONTREE', 'MARKUP', 'PREVIEW']} />
             </ToolbarPanel>
             <ViewportPanel>
               <ViewPanel type="DESIGNABLE">
@@ -203,24 +183,21 @@ const App = () => {
                 )}
               </ViewPanel>
               <ViewPanel type="JSONTREE" scrollable={false}>
-                {(tree, onChange) => (
-                  <SchemaEditorWidget tree={tree} onChange={onChange} />
-                )}
+                {(tree, onChange) => <SchemaEditorWidget tree={tree} onChange={onChange} />}
               </ViewPanel>
               <ViewPanel type="MARKUP" scrollable={false}>
                 {(tree) => <MarkupSchemaWidget tree={tree} />}
               </ViewPanel>
-              <ViewPanel type="PREVIEW">
-                {(tree) => <PreviewWidget tree={tree} />}
-              </ViewPanel>
+              <ViewPanel type="PREVIEW">{(tree) => <PreviewWidget tree={tree} />}</ViewPanel>
             </ViewportPanel>
           </WorkspacePanel>
         </Workspace>
         <SettingsPanel title="panels.PropertySettings">
+          <SettingsForm uploadAction="" />
         </SettingsPanel>
       </StudioPanel>
     </Designer>
-  )
-}
+  );
+};
 
 export default App;

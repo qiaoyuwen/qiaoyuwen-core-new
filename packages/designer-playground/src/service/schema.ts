@@ -2,7 +2,7 @@ import { Engine } from '@qiaoyuwen-core-next/designer-core'
 import {
   transformToSchema,
   transformToTreeNode,
-} from '@designable/formily-transformer'
+} from '@qiaoyuwen-core-next/designer-transformer'
 import { message } from 'antd'
 
 export const saveSchema = (designer: Engine) => {

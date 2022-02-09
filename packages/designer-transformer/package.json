@@ -1,0 +1,20 @@
+{
+  "name": "@qiaoyuwen-core-next/designer-transformer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf -rf ./dist && tsc --project tsconfig.build.json"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@formily/json-schema": "~2.0.9",
+    "@qiaoyuwen-core-next/designer-core": "~1.0.0",
+    "@qiaoyuwen-core-next/utils": "~1.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "~3.0.2",
+    "typescript": "~4.5.5"
+  }
+}
