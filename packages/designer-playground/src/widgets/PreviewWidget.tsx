@@ -1,6 +1,6 @@
-import React, { useMemo } from 'react'
-import { createForm } from '@formily/core'
-import { createSchemaField } from '@formily/react'
+import React, { useMemo } from 'react';
+import { createForm } from '@formily/core';
+import { createSchemaField } from '@formily/react';
 import {
   Form,
   FormItem,
@@ -28,19 +28,20 @@ import {
   FormCollapse,
   ArrayTable,
   ArrayCards,
-} from '@formily/antd'
-import { Card, Slider, Rate } from 'antd'
-import { TreeNode } from '@qiaoyuwen-core-next/designer-core'
-import { transformToSchema } from '@qiaoyuwen-core-next/designer-transformer'
+} from '@formily/antd';
+import { Card, Slider, Rate } from 'antd';
+import { Input as MobileInput } from '@qiaoyuwen-core-next/designer-antd-mobile';
+import { TreeNode } from '@qiaoyuwen-core-next/designer-core';
+import { transformToSchema } from '@qiaoyuwen-core-next/designer-transformer';
 
 const Text: React.FC<{
-  value?: string
-  content?: string
-  mode?: 'normal' | 'h1' | 'h2' | 'h3' | 'p'
+  value?: string;
+  content?: string;
+  mode?: 'normal' | 'h1' | 'h2' | 'h3' | 'p';
 }> = ({ value, mode, content, ...props }) => {
-  const tagName = mode === 'normal' || !mode ? 'div' : mode
-  return React.createElement(tagName, props, value || content)
-}
+  const tagName = mode === 'normal' || !mode ? 'div' : mode;
+  return React.createElement(tagName, props, value || content);
+};
 
 const SchemaField = createSchemaField({
   components: {
@@ -73,19 +74,20 @@ const SchemaField = createSchemaField({
     Card,
     Slider,
     Rate,
+    MobileInput,
   },
-})
+});
 
 export interface IPreviewWidgetProps {
-  tree: TreeNode
+  tree: TreeNode;
 }
 
 export const PreviewWidget: React.FC<IPreviewWidgetProps> = (props) => {
-  const form = useMemo(() => createForm(), [])
-  const { form: formProps, schema } = transformToSchema(props.tree)
+  const form = useMemo(() => createForm(), []);
+  const { form: formProps, schema } = transformToSchema(props.tree);
   return (
     <Form {...formProps} form={form}>
       <SchemaField schema={schema} />
     </Form>
-  )
-}
+  );
+};
