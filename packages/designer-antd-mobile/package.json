@@ -1,0 +1,24 @@
+{
+  "name": "@qiaoyuwen-core-next/designer-antd-mobile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf -rf ./dist && tsc --project tsconfig.build.json"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "~3.0.2",
+    "typescript": "~4.5.5",
+    "@types/react": "~17.0.39"
+  },
+  "dependencies": {
+    "react": "~17.0.2",
+    "@qiaoyuwen-core-next/formily-antd-mobile": "~1.0.0",
+    "@qiaoyuwen-core-next/designer-core": "~1.0.0",
+    "@qiaoyuwen-core-next/designer-react": "~1.0.0",
+    "@qiaoyuwen-core-next/designer-antd": "~1.0.0",
+    "@formily/react": "~2.0.9"
+  }
+}

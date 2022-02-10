@@ -49,6 +49,7 @@ import {
   FormLayout,
   FormGrid,
 } from '@qiaoyuwen-core-next/designer-antd';
+import { Input as MobileInput } from '@qiaoyuwen-core-next/designer-antd-mobile';
 import { SettingsForm, setNpmCDNRegistry } from '@qiaoyuwen-core-next/designer-react-settings-form';
 
 setNpmCDNRegistry('//unpkg.com');
@@ -129,10 +130,7 @@ const App = () => {
                 ObjectContainer,
               ]}
             />
-            <ResourceWidget
-              title="sources.MobileInputs"
-              sources={[]}
-            />
+            <ResourceWidget title="sources.MobileInputs" sources={[MobileInput]} />
             <ResourceWidget
               title="sources.Layouts"
               sources={[Card, FormGrid, FormTab, FormLayout, FormCollapse, Space]}
@@ -185,6 +183,7 @@ const App = () => {
                       FormGrid,
                       FormLayout,
                       ObjectContainer,
+                      MobileInput,
                     }}
                   />
                 )}

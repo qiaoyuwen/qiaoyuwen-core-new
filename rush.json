@@ -436,6 +436,14 @@
     {
       "packageName": "@qiaoyuwen-core-next/scripts",
       "projectFolder": "packages/scripts"
+    },
+    {
+      "packageName": "@qiaoyuwen-core-next/formily-antd-mobile",
+      "projectFolder": "packages/formily-antd-mobile"
+    },
+    {
+      "packageName": "@qiaoyuwen-core-next/designer-antd-mobile",
+      "projectFolder": "packages/designer-antd-mobile"
     }
     // {
     //   /**
