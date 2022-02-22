@@ -17,39 +17,11 @@ import {
   SettingsPanel,
   ComponentTreeWidget,
 } from '@qiaoyuwen-core-next/designer-react';
-import { createDesigner, GlobalRegistry, Shortcut, KeyCode } from '@qiaoyuwen-core-next/designer-core';
+import { createDesigner, GlobalRegistry, Shortcut, KeyCode, ScreenType } from '@qiaoyuwen-core-next/designer-core';
 import { ActionsWidget, PreviewWidget, SchemaEditorWidget, MarkupSchemaWidget } from './widgets';
 import { saveSchema } from './service';
-import {
-  Form,
-  Field,
-  Input,
-  Select,
-  TreeSelect,
-  Cascader,
-  Radio,
-  Checkbox,
-  Slider,
-  Rate,
-  NumberPicker,
-  Transfer,
-  Password,
-  DatePicker,
-  TimePicker,
-  Upload,
-  Switch,
-  Text,
-  Card,
-  ArrayCards,
-  ObjectContainer,
-  ArrayTable,
-  Space,
-  FormTab,
-  FormCollapse,
-  FormLayout,
-  FormGrid,
-} from '@qiaoyuwen-core-next/designer-antd';
-import { Input as MobileInput } from '@qiaoyuwen-core-next/designer-antd-mobile';
+import { Form, Field } from '@qiaoyuwen-core-next/designer-antd';
+import { Input } from '@qiaoyuwen-core-next/designer-antd-mobile';
 import { SettingsForm, setNpmCDNRegistry } from '@qiaoyuwen-core-next/designer-react-settings-form';
 
 setNpmCDNRegistry('//unpkg.com');
@@ -73,21 +45,13 @@ GlobalRegistry.registerDesignerLocales({
       Displays: 'Displays',
     },
   },
-  'ko-KR': {
-    sources: {
-      Inputs: '입력',
-      MobileInputs: 'MobileInputs',
-      Layouts: '레이아웃',
-      Arrays: '배열',
-      Displays: '디스플레이',
-    },
-  },
 });
 
-const App = () => {
+export const MobilePlayground = () => {
   const engine = useMemo(
     () =>
       createDesigner({
+        defaultScreenType: ScreenType.Mobile,
         shortcuts: [
           new Shortcut({
             codes: [
@@ -109,34 +73,7 @@ const App = () => {
       <StudioPanel actions={<ActionsWidget />}>
         <CompositePanel>
           <CompositePanel.Item title="panels.Component" icon="Component">
-            <ResourceWidget
-              title="sources.Inputs"
-              sources={[
-                Input,
-                Password,
-                NumberPicker,
-                Rate,
-                Slider,
-                Select,
-                TreeSelect,
-                Cascader,
-                Transfer,
-                Checkbox,
-                Radio,
-                DatePicker,
-                TimePicker,
-                Upload,
-                Switch,
-                ObjectContainer,
-              ]}
-            />
-            <ResourceWidget title="sources.MobileInputs" sources={[MobileInput]} />
-            <ResourceWidget
-              title="sources.Layouts"
-              sources={[Card, FormGrid, FormTab, FormLayout, FormCollapse, Space]}
-            />
-            <ResourceWidget title="sources.Arrays" sources={[ArrayCards, ArrayTable]} />
-            <ResourceWidget title="sources.Displays" sources={[Text]} />
+            <ResourceWidget title="sources.Inputs" sources={[Input]} />
           </CompositePanel.Item>
           <CompositePanel.Item title="panels.OutlinedTree" icon="Outline">
             <OutlineTreeWidget />
@@ -159,31 +96,6 @@ const App = () => {
                       Form,
                       Field,
                       Input,
-                      Select,
-                      TreeSelect,
-                      Cascader,
-                      Radio,
-                      Checkbox,
-                      Slider,
-                      Rate,
-                      NumberPicker,
-                      Transfer,
-                      Password,
-                      DatePicker,
-                      TimePicker,
-                      Upload,
-                      Switch,
-                      Text,
-                      Card,
-                      ArrayCards,
-                      ArrayTable,
-                      Space,
-                      FormTab,
-                      FormCollapse,
-                      FormGrid,
-                      FormLayout,
-                      ObjectContainer,
-                      MobileInput,
                     }}
                   />
                 )}
@@ -205,5 +117,3 @@ const App = () => {
     </Designer>
   );
 };
-
-export default App;
