@@ -20,8 +20,8 @@ import {
 import { createDesigner, GlobalRegistry, Shortcut, KeyCode, ScreenType } from '@qiaoyuwen-core-next/designer-core';
 import { ActionsWidget, PreviewWidget, SchemaEditorWidget, MarkupSchemaWidget } from './widgets';
 import { saveSchema } from './service';
-import { Form, Field } from '@qiaoyuwen-core-next/designer-antd';
-import { Input } from '@qiaoyuwen-core-next/designer-antd-mobile';
+import { Field } from '@qiaoyuwen-core-next/designer-antd';
+import { Form, Input } from '@qiaoyuwen-core-next/designer-antd-mobile';
 import { SettingsForm, setNpmCDNRegistry } from '@qiaoyuwen-core-next/designer-react-settings-form';
 
 setNpmCDNRegistry('//unpkg.com');
