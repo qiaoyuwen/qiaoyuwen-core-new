@@ -37,7 +37,9 @@
     "react-infinite-scroller": "~1.2.4",
     "react-beautiful-dnd": "~13.1.0",
     "@ant-design/icons": "~4.7.0",
-    "@qiaoyuwen-core-next/designer-playground": "~1.0.0"
+    "@qiaoyuwen-core-next/designer-playground": "~1.0.0",
+    "@qiaoyuwen-core-next/formily-antd-mobile": "~1.0.0",
+    "@formily/core": "~2.0.14"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",

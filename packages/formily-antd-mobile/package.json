@@ -18,6 +18,7 @@
     "@formily/react": "~2.0.9",
     "antd-mobile": "v5.0.0-rc.26",
     "@formily/core": "~2.0.12",
-    "@formily/json-schema": "~2.0.12"
+    "@formily/json-schema": "~2.0.12",
+    "classnames": "~2.3.1"
   }
 }
