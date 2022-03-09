@@ -5,6 +5,7 @@ export interface IFormLayoutProps {
   mode?: 'default' | 'card';
   footer?: ReactNode;
   shallow?: boolean;
+  requiredMarkStyle?: 'asterisk' | 'text-required' | 'text-optional';
 }
 
 export interface IFormLayoutContext extends IFormLayoutProps {}

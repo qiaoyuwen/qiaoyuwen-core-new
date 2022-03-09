@@ -39,7 +39,8 @@
     "@ant-design/icons": "~4.7.0",
     "@qiaoyuwen-core-next/designer-playground": "~1.0.0",
     "@qiaoyuwen-core-next/formily-antd-mobile": "~1.0.0",
-    "@formily/core": "~2.0.14"
+    "@formily/core": "~2.0.14",
+    "antd-mobile": "~5.4.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
