@@ -128,7 +128,6 @@ type ComposeFormItem = React.FC<IFormItemProps> & {
 export const FormItem: ComposeFormItem = connect(
   BaseItem,
   mapProps((props, field) => {
-    console.log('props', props);
     if (isVoidField(field)) {
       return {
         label: field.title || props.label,
@@ -144,6 +143,7 @@ export const FormItem: ComposeFormItem = connect(
       description: props.description || field.description,
       errors: field.selfErrors.length ? field.selfErrors : [],
       warnings: field.selfWarnings.length ? field.selfWarnings : [],
+      hasFeedback: !!(field.selfErrors.length || field.selfWarnings.length),
     };
 
     console.log('newProps', newProps);
