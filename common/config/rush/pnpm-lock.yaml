@@ -19318,7 +19318,7 @@ packages:
     dev: false
 
   file:projects/formily-antd-mobile.tgz_8deed4416e3abb0614c656805d58e088:
-    resolution: {integrity: sha512-DkrN1RaxkOjQj6el6U1uMwMqy7IBCud7ue2l8jMVuaHtCig7v2aFIihsUkhykHlJ1YBCJ5vGzw+LeiUtpSXGeg==, tarball: file:projects/formily-antd-mobile.tgz}
+    resolution: {integrity: sha512-jN9Gd+Xa6D6WCWuRibgL+sdRoqon9CN+8JIk/sWRyCYv5CFs8ghQXzWv/cfLV+eQp6GtFI7LEoweIoQv4+K/pw==, tarball: file:projects/formily-antd-mobile.tgz}
     id: file:projects/formily-antd-mobile.tgz
     name: '@rush-temp/formily-antd-mobile'
     version: 0.0.0
@@ -19332,8 +19332,12 @@ packages:
       classnames: 2.3.1
       react: 17.0.2
       rimraf: 3.0.2
+      ts-node: 10.5.0_typescript@4.5.5
       typescript: 4.5.5
     transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/wasm'
+      - '@types/node'
       - '@types/react-dom'
       - react-dom
       - react-is

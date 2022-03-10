@@ -14,9 +14,31 @@ const Component: FunctionComponent = () => {
   return (
     <Form form={form}>
       <Form.Header>标题1</Form.Header>
-      <Field name="username" title="用户名" required decorator={[FormItem]} component={[Input, {
-        placeholder: '请输入用户名'
-      }]} />
+      <Field
+        name="username"
+        title="用户名"
+        required
+        decorator={[FormItem]}
+        component={[
+          Input,
+          {
+            placeholder: '请输入用户名',
+          },
+        ]}
+      />
+      <Field
+        name="password"
+        title="密码"
+        required
+        decorator={[FormItem]}
+        component={[
+          Input,
+          {
+            type: 'password',
+            placeholder: '请输入密码',
+          },
+        ]}
+      />
       <Button
         onClick={async () => {
           const data = await form.submit();

@@ -6,6 +6,7 @@ import { useFormLayout } from '../form-layout';
 import cls from 'classnames';
 import { connect, mapProps } from '@formily/react';
 import { isVoidField } from '@formily/core';
+import './index.less';
 
 const AnyPopover = Popover as any;
 
