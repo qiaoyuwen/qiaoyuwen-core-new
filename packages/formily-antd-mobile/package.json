@@ -19,6 +19,7 @@
     "antd-mobile": "~5.4.0",
     "@formily/core": "~2.0.12",
     "@formily/json-schema": "~2.0.12",
-    "classnames": "~2.3.1"
+    "classnames": "~2.3.1",
+    "antd-mobile-icons": "~0.2.2"
   }
 }

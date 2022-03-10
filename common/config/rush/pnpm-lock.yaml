@@ -19301,7 +19301,7 @@ packages:
     dev: false
 
   file:projects/formily-antd-mobile.tgz_f1c2f792846d980052b021ef480acf2d:
-    resolution: {integrity: sha512-6VITpLhvtxIw6v1EGvgMIwIqfapk1ziUmY/bvpzHqqt0GEekqxutDtQgmS0WZK2u1vAItW68m5q/g7q+75aHdA==, tarball: file:projects/formily-antd-mobile.tgz}
+    resolution: {integrity: sha512-1rxPcyCHMkf7IEQwvSkP1RZR3LYDuSQpXVNmL8qrbLLF5PCr6t1kAG+Dwe0eA04dCJh2/83LGlZxUSDNFM8V3Q==, tarball: file:projects/formily-antd-mobile.tgz}
     id: file:projects/formily-antd-mobile.tgz
     name: '@rush-temp/formily-antd-mobile'
     version: 0.0.0
@@ -19311,6 +19311,7 @@ packages:
       '@formily/react': 2.0.12_47800d0925ea25b9c4b70a6c14c111e0
       '@types/react': 17.0.39
       antd-mobile: 5.4.0_react-dom@17.0.2+react@17.0.2
+      antd-mobile-icons: 0.2.2
       classnames: 2.3.1
       react: 17.0.2
       rimraf: 3.0.2

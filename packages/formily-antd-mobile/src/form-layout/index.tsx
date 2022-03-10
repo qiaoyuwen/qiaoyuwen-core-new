@@ -6,6 +6,7 @@ export interface IFormLayoutProps {
   footer?: ReactNode;
   shallow?: boolean;
   requiredMarkStyle?: 'asterisk' | 'text-required' | 'text-optional';
+  hasFeedback?: boolean;
 }
 
 export interface IFormLayoutContext extends IFormLayoutProps {}
