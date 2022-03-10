@@ -15,9 +15,9 @@
   },
   "dependencies": {
     "@qiaoyuwen-core-next/utils": "~1.0.0",
-    "@formily/reactive": "~2.0.9",
+    "@formily/reactive": "~2.0.14",
     "@juggle/resize-observer": "~3.3.1",
-    "@formily/path": "~2.0.9",
-    "@formily/json-schema": "~2.0.9"
+    "@formily/path": "~2.0.14",
+    "@formily/json-schema": "~2.0.14"
   }
 }

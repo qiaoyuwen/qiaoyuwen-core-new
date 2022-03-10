@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@formily/json-schema": "~2.0.9",
+    "@formily/json-schema": "~2.0.14",
     "@qiaoyuwen-core-next/designer-core": "~1.0.0",
     "@qiaoyuwen-core-next/utils": "~1.0.0"
   },

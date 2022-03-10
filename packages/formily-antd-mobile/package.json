@@ -15,10 +15,10 @@
   },
   "dependencies": {
     "react": "~17.0.2",
-    "@formily/react": "~2.0.9",
+    "@formily/react": "~2.0.14",
     "antd-mobile": "~5.4.0",
-    "@formily/core": "~2.0.12",
-    "@formily/json-schema": "~2.0.12",
+    "@formily/core": "~2.0.14",
+    "@formily/json-schema": "~2.0.14",
     "classnames": "~2.3.1",
     "antd-mobile-icons": "~0.2.2"
   }

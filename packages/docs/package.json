@@ -40,7 +40,8 @@
     "@qiaoyuwen-core-next/designer-playground": "~1.0.0",
     "@qiaoyuwen-core-next/formily-antd-mobile": "~1.0.0",
     "@formily/core": "~2.0.14",
-    "antd-mobile": "~5.4.0"
+    "antd-mobile": "~5.4.0",
+    "@formily/react": "~2.0.14"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
