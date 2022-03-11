@@ -3,6 +3,7 @@ export const Input = {
     title: '输入框',
     settings: {
       'x-component-props': {
+        clearable: '允许清除内容',
       },
     },
   },
@@ -10,7 +11,8 @@ export const Input = {
     title: 'Input',
     settings: {
       'x-component-props': {
+        clearable: 'Clearable',
       },
     },
   },
-}
+};

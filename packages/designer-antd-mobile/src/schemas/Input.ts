@@ -8,5 +8,10 @@ export const Input: ISchema & { TextArea?: ISchema } = {
       'x-decorator': 'FormItem',
       'x-component': 'Input',
     },
+    clearable: {
+      type: 'boolean',
+      'x-decorator': 'FormItem',
+      'x-component': 'Switch',
+    },
   },
 };
