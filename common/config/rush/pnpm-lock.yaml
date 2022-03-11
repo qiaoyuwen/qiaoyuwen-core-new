@@ -19069,7 +19069,7 @@ packages:
     dev: false
 
   file:projects/designer-antd-mobile.tgz_8deed4416e3abb0614c656805d58e088:
-    resolution: {integrity: sha512-jPWRMen5NOL7UUxNF8hFBgMWzn8a5TYMXMeihH84O25nOH3CxNKDBKLuVezlANOFO6Oxb/XW5e/rWeI7zuGjsw==, tarball: file:projects/designer-antd-mobile.tgz}
+    resolution: {integrity: sha512-eKl1p8yuAg5Oa2UsznPkb9qaNmU+3LKUnxcI1nvrk7vnDBuns+JvKJeBxC4SmMuhqYJbWifjmYG7N2VB6b7ZUg==, tarball: file:projects/designer-antd-mobile.tgz}
     id: file:projects/designer-antd-mobile.tgz
     name: '@rush-temp/designer-antd-mobile'
     version: 0.0.0
@@ -19077,6 +19077,8 @@ packages:
       '@formily/core': 2.0.14
       '@formily/json-schema': 2.0.14_typescript@4.5.5
       '@formily/react': 2.0.14_dff9e9894acaeee1ef49674ef3d14c43
+      '@formily/reactive': 2.0.14
+      '@formily/shared': 2.0.14
       '@types/react': 17.0.40
       react: 17.0.2
       rimraf: 3.0.2

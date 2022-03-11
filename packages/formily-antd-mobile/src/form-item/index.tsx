@@ -147,8 +147,6 @@ export const FormItem: ComposeFormItem = connect(
       hasFeedback: !!(field.selfErrors.length || field.selfWarnings.length),
     };
 
-    console.log('newProps', newProps);
-
     return newProps;
   }),
 );

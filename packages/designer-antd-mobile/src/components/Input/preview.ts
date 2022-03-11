@@ -1,4 +1,3 @@
-import React from 'react';
 import { Input as FormilyInput } from '@qiaoyuwen-core-next/formily-antd-mobile';
 import { createBehavior, createResource } from '@qiaoyuwen-core-next/designer-core';
 import { DnFC } from '@qiaoyuwen-core-next/designer-react';
@@ -9,9 +8,9 @@ import { AllLocales } from '../../locales';
 export const Input: DnFC<React.ComponentProps<typeof FormilyInput>> = FormilyInput;
 
 Input.Behavior = createBehavior({
-  name: 'MobileInput',
+  name: 'Input',
   extends: ['Field'],
-  selector: (node) => node.props['x-component'] === 'MobileInput',
+  selector: (node) => node.props['x-component'] === 'Input',
   designerProps: {
     propsSchema: createFieldSchema(AllSchemas.Input),
   },
@@ -25,9 +24,9 @@ Input.Resource = createResource({
       componentName: 'Field',
       props: {
         type: 'string',
-        title: 'MobileInput',
+        title: 'Input',
         'x-decorator': 'FormItem',
-        'x-component': 'MobileInput',
+        'x-component': 'Input',
       },
     },
   ],
