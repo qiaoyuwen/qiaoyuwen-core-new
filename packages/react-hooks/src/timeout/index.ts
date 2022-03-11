@@ -39,7 +39,7 @@ export function useInterval(callback: () => void, ms: number) {
 export function useCountdown(initialCountdownMs: number = 60 * 1000, stepMs: number = 1 * 1000, callback?: () => void) {
   const [countdown, setCountdown] = useState(initialCountdownMs);
   const countdownRef = useRef(initialCountdownMs);
-  const timeoutIdRef = useRef<NodeJS.Timer>();
+  const timeoutIdRef = useRef<number>();
   const callbackRef = useRef(callback);
 
   useEffect(() => {
