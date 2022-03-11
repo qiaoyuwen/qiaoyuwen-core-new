@@ -1,4 +1,4 @@
-import { createLocales } from '@qiaoyuwen-core-next/designer-core'
+import { createLocales } from '@qiaoyuwen-core-next/designer-core';
 
 export const Form = createLocales({
   'zh-CN': {
@@ -16,4 +16,4 @@ export const Form = createLocales({
       },
     },
   },
-})
+});

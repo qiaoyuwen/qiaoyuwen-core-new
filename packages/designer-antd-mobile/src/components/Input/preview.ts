@@ -1,7 +1,7 @@
 import { Input as FormilyInput } from '@qiaoyuwen-core-next/formily-antd-mobile';
 import { createBehavior, createResource } from '@qiaoyuwen-core-next/designer-core';
 import { DnFC } from '@qiaoyuwen-core-next/designer-react';
-import { createFieldSchema } from '@qiaoyuwen-core-next/designer-antd';
+import { createFieldSchema } from '../Field';
 import { AllSchemas } from '../../schemas';
 import { AllLocales } from '../../locales';
 
@@ -29,7 +29,7 @@ Input.Resource = createResource({
         'x-component': 'Input',
         'x-component-props': {
           placeholder: '请输入',
-        }
+        },
       },
     },
   ],
