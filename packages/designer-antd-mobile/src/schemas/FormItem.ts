@@ -12,5 +12,20 @@ export const FormItem: ISchema = {
         defaultValue: 'vertical',
       },
     },
+    help: {
+      type: 'string',
+      'x-decorator': 'FormItem',
+      'x-component': 'Input',
+    },
+    extra: {
+      type: 'string',
+      'x-decorator': 'FormItem',
+      'x-component': 'Input',
+    },
+    arrow: {
+      type: 'boolean',
+      'x-decorator': 'FormItem',
+      'x-component': 'Switch',
+    },
   },
 }
