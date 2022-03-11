@@ -1,6 +1,6 @@
 import { ISchema } from '@formily/react';
 
-export const Selector: ISchema & { TextArea?: ISchema } = {
+export const Selector: ISchema = {
   type: 'object',
   properties: {
     columns: {
