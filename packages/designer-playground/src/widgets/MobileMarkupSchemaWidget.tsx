@@ -68,6 +68,10 @@ import {
   Form,
   FormItem,
   Input,
+  Selector,
+  Slider,
+  Stepper,
+  Switch,
 } from '@qiaoyuwen-core-next/formily-antd-mobile'
 
 const SchemaField = createSchemaField({
