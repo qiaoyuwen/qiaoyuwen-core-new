@@ -6,6 +6,7 @@ import { useFormLayout } from '../form-layout';
 import cls from 'classnames';
 import { connect, mapProps } from '@formily/react';
 import { isVoidField } from '@formily/core';
+import { pickDataProps } from '../__builtins__';
 import './index.less';
 
 const AnyPopover = Popover as any;
@@ -102,6 +103,7 @@ const BaseItem: FunctionComponent<IFormItemProps> = (props) => {
 
   return (
     <List.Item
+      {...pickDataProps(props)}
       style={style}
       title={layout === 'vertical' && labelElement}
       prefix={layout === 'horizontal' && labelElement}

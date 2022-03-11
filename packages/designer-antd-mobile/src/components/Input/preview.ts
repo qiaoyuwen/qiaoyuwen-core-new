@@ -27,6 +27,9 @@ Input.Resource = createResource({
         title: 'Input',
         'x-decorator': 'FormItem',
         'x-component': 'Input',
+        'x-component-props': {
+          placeholder: '请输入',
+        }
       },
     },
   ],
