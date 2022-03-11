@@ -20,7 +20,7 @@ import {
 import { createDesigner, GlobalRegistry, Shortcut, KeyCode, ScreenType } from '@qiaoyuwen-core-next/designer-core';
 import { ActionsWidget, MobilePreviewWidget, SchemaEditorWidget, MobileMarkupSchemaWidget } from './widgets';
 import { saveSchema } from './service';
-import { Form, Field, Input, Selector, Slider, Stepper } from '@qiaoyuwen-core-next/designer-antd-mobile';
+import { Form, Field, Input, Selector, Slider, Stepper, Switch } from '@qiaoyuwen-core-next/designer-antd-mobile';
 import { SettingsForm, setNpmCDNRegistry } from '@qiaoyuwen-core-next/designer-react-settings-form';
 
 setNpmCDNRegistry('//unpkg.com');
@@ -72,7 +72,7 @@ export const MobilePlayground = () => {
       <StudioPanel actions={<ActionsWidget />}>
         <CompositePanel>
           <CompositePanel.Item title="panels.Component" icon="Component">
-            <ResourceWidget title="sources.Inputs" sources={[Input, Selector, Slider, Stepper]} />
+            <ResourceWidget title="sources.Inputs" sources={[Input, Selector, Slider, Stepper, Switch]} />
           </CompositePanel.Item>
           <CompositePanel.Item title="panels.OutlinedTree" icon="Outline">
             <OutlineTreeWidget />
@@ -98,6 +98,7 @@ export const MobilePlayground = () => {
                       Selector,
                       Slider,
                       Stepper,
+                      Switch,
                     }}
                   />
                 )}

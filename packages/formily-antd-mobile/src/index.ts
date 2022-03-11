@@ -5,4 +5,5 @@ export * from './input';
 export * from './selector';
 export * from './slider';
 export * from './stepper';
+export * from './switch';
 export { Field } from '@formily/react';
