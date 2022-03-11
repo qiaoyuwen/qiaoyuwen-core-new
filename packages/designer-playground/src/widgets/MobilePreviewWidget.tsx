@@ -1,35 +1,7 @@
 import React, { useMemo } from 'react';
 import { createForm } from '@formily/core';
 import { createSchemaField } from '@formily/react';
-import {
-  Form,
-  FormItem,
-  DatePicker,
-  Checkbox,
-  Cascader,
-  Editable,
-  Input,
-  NumberPicker,
-  Switch,
-  Password,
-  PreviewText,
-  Radio,
-  Reset,
-  Select,
-  Space,
-  Submit,
-  TimePicker,
-  Transfer,
-  TreeSelect,
-  Upload,
-  FormGrid,
-  FormLayout,
-  FormTab,
-  FormCollapse,
-  ArrayTable,
-  ArrayCards,
-} from '@formily/antd';
-import { Card, Slider, Rate } from 'antd';
+import { Form, FormItem, Input } from '@qiaoyuwen-core-next/formily-antd-mobile';
 import { TreeNode } from '@qiaoyuwen-core-next/designer-core';
 import { transformToSchema } from '@qiaoyuwen-core-next/designer-transformer';
 
@@ -44,43 +16,16 @@ const Text: React.FC<{
 
 const SchemaField = createSchemaField({
   components: {
-    Space,
-    FormGrid,
-    FormLayout,
-    FormTab,
-    FormCollapse,
-    ArrayTable,
-    ArrayCards,
     FormItem,
-    DatePicker,
-    Checkbox,
-    Cascader,
-    Editable,
     Input,
-    Text,
-    NumberPicker,
-    Switch,
-    Password,
-    PreviewText,
-    Radio,
-    Reset,
-    Select,
-    Submit,
-    TimePicker,
-    Transfer,
-    TreeSelect,
-    Upload,
-    Card,
-    Slider,
-    Rate,
   },
 });
 
-export interface IPreviewWidgetProps {
+export interface IMobilePreviewWidgetProps {
   tree: TreeNode;
 }
 
-export const PreviewWidget: React.FC<IPreviewWidgetProps> = (props) => {
+export const MobilePreviewWidget: React.FC<IMobilePreviewWidgetProps> = (props) => {
   const form = useMemo(() => createForm(), []);
   const { form: formProps, schema } = transformToSchema(props.tree);
   return (

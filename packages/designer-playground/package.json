@@ -28,6 +28,7 @@
     "@formily/antd": "~2.0.14",
     "@qiaoyuwen-core-next/designer-react-settings-form": "~1.0.0",
     "@qiaoyuwen-core-next/designer-transformer": "~1.0.0",
-    "@qiaoyuwen-core-next/designer-antd-mobile": "~1.0.0"
+    "@qiaoyuwen-core-next/designer-antd-mobile": "~1.0.0",
+    "@qiaoyuwen-core-next/formily-antd-mobile": "~1.0.0"
   }
 }

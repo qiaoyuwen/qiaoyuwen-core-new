@@ -18,7 +18,7 @@ import {
   ComponentTreeWidget,
 } from '@qiaoyuwen-core-next/designer-react';
 import { createDesigner, GlobalRegistry, Shortcut, KeyCode, ScreenType } from '@qiaoyuwen-core-next/designer-core';
-import { ActionsWidget, PreviewWidget, SchemaEditorWidget, MarkupSchemaWidget } from './widgets';
+import { ActionsWidget, MobilePreviewWidget, SchemaEditorWidget, MobileMarkupSchemaWidget } from './widgets';
 import { saveSchema } from './service';
 import { Form, Input, Field } from '@qiaoyuwen-core-next/designer-antd-mobile';
 import { SettingsForm, setNpmCDNRegistry } from '@qiaoyuwen-core-next/designer-react-settings-form';
@@ -103,9 +103,9 @@ export const MobilePlayground = () => {
                 {(tree, onChange) => <SchemaEditorWidget tree={tree} onChange={onChange} />}
               </ViewPanel>
               <ViewPanel type="MARKUP" scrollable={false}>
-                {(tree) => <MarkupSchemaWidget tree={tree} />}
+                {(tree) => <MobileMarkupSchemaWidget tree={tree} />}
               </ViewPanel>
-              <ViewPanel type="PREVIEW">{(tree) => <PreviewWidget tree={tree} />}</ViewPanel>
+              <ViewPanel type="PREVIEW">{(tree) => <MobilePreviewWidget tree={tree} />}</ViewPanel>
             </ViewportPanel>
           </WorkspacePanel>
         </Workspace>

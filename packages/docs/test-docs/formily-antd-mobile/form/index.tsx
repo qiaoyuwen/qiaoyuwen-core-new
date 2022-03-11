@@ -19,6 +19,7 @@ const Component: FunctionComponent = () => {
         title="用户名"
         required
         decorator={[FormItem]}
+        description="描述"
         component={[
           Input,
           {
