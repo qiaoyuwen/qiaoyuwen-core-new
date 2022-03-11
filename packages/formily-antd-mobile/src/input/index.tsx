@@ -1,15 +1,8 @@
-import React from 'react';
-import { connect, mapProps } from '@formily/react';
+import { FunctionComponent } from 'react';
+import { connect } from '@formily/react';
 import { Input as AntdMobileInput } from 'antd-mobile';
 import { InputProps } from 'antd-mobile/es/components/input';
 
-export const Input: React.FC<InputProps> = connect(
-  AntdMobileInput,
-  mapProps((props) => {
-    return {
-      ...props,
-    };
-  }),
-);
+export const Input: FunctionComponent<InputProps> = connect(AntdMobileInput);
 
 export default Input;
