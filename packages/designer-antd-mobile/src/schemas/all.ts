@@ -6,3 +6,4 @@ export * from './Slider';
 export * from './Stepper';
 export * from './Switch';
 export * from './Checkbox';
+export * from './Radio';

@@ -29,6 +29,7 @@ import {
   Stepper,
   Switch,
   Checkbox,
+  Radio,
 } from '@qiaoyuwen-core-next/designer-antd-mobile';
 import { SettingsForm, setNpmCDNRegistry } from '@qiaoyuwen-core-next/designer-react-settings-form';
 
@@ -81,7 +82,10 @@ export const MobilePlayground = () => {
       <StudioPanel actions={<ActionsWidget />}>
         <CompositePanel>
           <CompositePanel.Item title="panels.Component" icon="Component">
-            <ResourceWidget title="sources.Inputs" sources={[Input, Selector, Slider, Stepper, Switch, Checkbox]} />
+            <ResourceWidget
+              title="sources.Inputs"
+              sources={[Input, Selector, Slider, Stepper, Switch, Checkbox, Radio]}
+            />
           </CompositePanel.Item>
           <CompositePanel.Item title="panels.OutlinedTree" icon="Outline">
             <OutlineTreeWidget />
@@ -109,6 +113,7 @@ export const MobilePlayground = () => {
                       Stepper,
                       Switch,
                       Checkbox,
+                      Radio,
                     }}
                   />
                 )}

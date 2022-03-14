@@ -1,4 +1,3 @@
-import React from 'react'
 import { Checkbox as FormilyCheckbox } from '@qiaoyuwen-core-next/formily-antd-mobile'
 import { createBehavior, createResource } from '@qiaoyuwen-core-next/designer-core'
 import { DnFC } from '@qiaoyuwen-core-next/designer-react'

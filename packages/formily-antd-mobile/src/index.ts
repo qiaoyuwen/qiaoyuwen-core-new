@@ -7,4 +7,5 @@ export * from './slider';
 export * from './stepper';
 export * from './switch';
 export * from './checkbox';
+export * from './radio';
 export { Field } from '@formily/react';
