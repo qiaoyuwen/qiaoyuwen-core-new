@@ -15,7 +15,7 @@ export const Stepper = {
     },
   },
   'en-US': {
-    title: 'Slider',
+    title: 'Stepper',
     settings: {
       'x-component-props': {
         min: 'Min',
