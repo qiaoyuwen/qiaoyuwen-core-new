@@ -27,6 +27,11 @@ Selector.Resource = createResource({
         title: 'Selector',
         'x-decorator': 'FormItem',
         'x-component': 'Selector',
+        enum: [
+          { label: '选项1', value: 1 },
+          { label: '选项2', value: 2 },
+          { label: '选项3', value: 3 },
+        ],
       },
     },
   ],
