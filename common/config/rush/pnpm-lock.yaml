@@ -19069,7 +19069,7 @@ packages:
     dev: false
 
   file:projects/designer-antd-mobile.tgz_8deed4416e3abb0614c656805d58e088:
-    resolution: {integrity: sha512-eKl1p8yuAg5Oa2UsznPkb9qaNmU+3LKUnxcI1nvrk7vnDBuns+JvKJeBxC4SmMuhqYJbWifjmYG7N2VB6b7ZUg==, tarball: file:projects/designer-antd-mobile.tgz}
+    resolution: {integrity: sha512-QYjufPojz5wGDEyrvzh79H1+cKD4JRTu+reHcIRIl09rNVg5f5Z1fireJG/jOhAxuQXizwj2UFIHuwPlwB2vEA==, tarball: file:projects/designer-antd-mobile.tgz}
     id: file:projects/designer-antd-mobile.tgz
     name: '@rush-temp/designer-antd-mobile'
     version: 0.0.0
@@ -19134,7 +19134,7 @@ packages:
     dev: false
 
   file:projects/designer-playground.tgz:
-    resolution: {integrity: sha512-Gv897tLd/aRwyl+ax2VKvOSa23oEUYkz85hfdjZNYGdAKxX9P2HSTSipjPB+H1RWZQGabqB/A7/P46o1/xeyAg==, tarball: file:projects/designer-playground.tgz}
+    resolution: {integrity: sha512-awXRbbpuYRGWy8isD26nTI66M22clJ6tsRGWprwwZ5oi0sEieJvxeXxtwzrIIjkUJMOGJKW8fG6p9k+XD1rl6g==, tarball: file:projects/designer-playground.tgz}
     name: '@rush-temp/designer-playground'
     version: 0.0.0
     dependencies:
@@ -19320,7 +19320,7 @@ packages:
     dev: false
 
   file:projects/formily-antd-mobile.tgz_8deed4416e3abb0614c656805d58e088:
-    resolution: {integrity: sha512-jN9Gd+Xa6D6WCWuRibgL+sdRoqon9CN+8JIk/sWRyCYv5CFs8ghQXzWv/cfLV+eQp6GtFI7LEoweIoQv4+K/pw==, tarball: file:projects/formily-antd-mobile.tgz}
+    resolution: {integrity: sha512-kS/SR9J6bNHy8ps+TLYvjJg2ojs0CjXTW1FKMFYlVfAvfoqOfrlxaFp7lGeRFO4/1fysXuXdLt9UfDZN/TWgSg==, tarball: file:projects/formily-antd-mobile.tgz}
     id: file:projects/formily-antd-mobile.tgz
     name: '@rush-temp/formily-antd-mobile'
     version: 0.0.0
@@ -19332,6 +19332,7 @@ packages:
       antd-mobile: 5.4.0_react-dom@17.0.2+react@17.0.2
       antd-mobile-icons: 0.2.2
       classnames: 2.3.1
+      dayjs: 1.10.8
       react: 17.0.2
       rimraf: 3.0.2
       ts-node: 10.5.0_typescript@4.5.5

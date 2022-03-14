@@ -9,4 +9,5 @@ export * from './switch';
 export * from './checkbox';
 export * from './radio';
 export * from './rate';
+export * from './picker';
 export { Field } from '@formily/react';
