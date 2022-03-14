@@ -12,7 +12,9 @@ Stepper.Behavior = createBehavior({
   extends: ['Field'],
   selector: (node) => node.props['x-component'] === 'Stepper',
   designerProps: {
-    propsSchema: createFieldSchema(AllSchemas.Stepper),
+    propsSchema: createFieldSchema({
+      component: AllSchemas.Stepper,
+    }),
   },
   designerLocales: AllLocales.Stepper,
 });

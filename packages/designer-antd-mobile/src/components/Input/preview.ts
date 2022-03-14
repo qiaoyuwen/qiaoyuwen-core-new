@@ -12,7 +12,9 @@ Input.Behavior = createBehavior({
   extends: ['Field'],
   selector: (node) => node.props['x-component'] === 'Input',
   designerProps: {
-    propsSchema: createFieldSchema(AllSchemas.Input),
+    propsSchema: createFieldSchema({
+      component: AllSchemas.Input,
+    }),
   },
   designerLocales: AllLocales.Input,
 });

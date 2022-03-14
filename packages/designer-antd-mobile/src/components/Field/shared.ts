@@ -1,5 +1,6 @@
 import { ISchema } from '@formily/json-schema';
 import { ReactionsSetter, DataSourceSetter, ValidatorSetter } from '@qiaoyuwen-core-next/designer-setters';
+import { ReactNode } from 'react';
 import { AllSchemas } from '../../schemas';
 
 export const createComponentSchema = (component: ISchema, decorator: ISchema) => {
@@ -36,7 +37,18 @@ export const createComponentSchema = (component: ISchema, decorator: ISchema) =>
   };
 };
 
-export const createFieldSchema = (component?: ISchema, decorator: ISchema = AllSchemas.FormItem): ISchema => {
+export const createFieldSchema = (options: {
+  component?: ISchema;
+  decorator?: ISchema;
+  dataSourceSetter?: false | ReactNode;
+}): ISchema => {
+  const { component, decorator = AllSchemas.FormItem } = options;
+
+  let dataSourceSetter = options.dataSourceSetter;
+  if (dataSourceSetter !== false && !dataSourceSetter) {
+    dataSourceSetter = DataSourceSetter;
+  }
+
   return {
     type: 'object',
     properties: {
@@ -81,10 +93,12 @@ export const createFieldSchema = (component?: ISchema, decorator: ISchema = AllS
             'x-decorator': 'FormItem',
             'x-component': 'ValueInput',
           },
-          enum: {
-            'x-decorator': 'FormItem',
-            'x-component': DataSourceSetter,
-          },
+          enum: dataSourceSetter
+            ? {
+                'x-decorator': 'FormItem',
+                'x-component': DataSourceSetter,
+              }
+            : undefined,
           'x-reactions': {
             'x-decorator': 'FormItem',
             'x-component': ReactionsSetter,

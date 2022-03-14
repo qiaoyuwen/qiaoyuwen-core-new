@@ -12,7 +12,9 @@ Selector.Behavior = createBehavior({
   extends: ['Field'],
   selector: (node) => node.props['x-component'] === 'Selector',
   designerProps: {
-    propsSchema: createFieldSchema(AllSchemas.Selector),
+    propsSchema: createFieldSchema({
+      component: AllSchemas.Selector,
+    }),
   },
   designerLocales: AllLocales.Selector,
 });

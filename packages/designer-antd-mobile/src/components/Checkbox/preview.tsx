@@ -1,22 +1,23 @@
-import { Checkbox as FormilyCheckbox } from '@qiaoyuwen-core-next/formily-antd-mobile'
-import { createBehavior, createResource } from '@qiaoyuwen-core-next/designer-core'
-import { DnFC } from '@qiaoyuwen-core-next/designer-react'
-import { createFieldSchema } from '../Field'
-import { AllSchemas } from '../../schemas'
-import { AllLocales } from '../../locales'
+import { Checkbox as FormilyCheckbox } from '@qiaoyuwen-core-next/formily-antd-mobile';
+import { createBehavior, createResource } from '@qiaoyuwen-core-next/designer-core';
+import { DnFC } from '@qiaoyuwen-core-next/designer-react';
+import { createFieldSchema } from '../Field';
+import { AllSchemas } from '../../schemas';
+import { AllLocales } from '../../locales';
 
-export const Checkbox: DnFC<React.ComponentProps<typeof FormilyCheckbox>> =
-  FormilyCheckbox
+export const Checkbox: DnFC<React.ComponentProps<typeof FormilyCheckbox>> = FormilyCheckbox;
 
 Checkbox.Behavior = createBehavior({
   name: 'Checkbox.Group',
   extends: ['Field'],
   selector: (node) => node.props['x-component'] === 'Checkbox.Group',
   designerProps: {
-    propsSchema: createFieldSchema(AllSchemas.Checkbox.Group),
+    propsSchema: createFieldSchema({
+      component: AllSchemas.Checkbox.Group,
+    }),
   },
   designerLocales: AllLocales.CheckboxGroup,
-})
+});
 
 Checkbox.Resource = createResource({
   icon: 'CheckboxGroupSource',
@@ -35,4 +36,4 @@ Checkbox.Resource = createResource({
       },
     },
   ],
-})
+});
