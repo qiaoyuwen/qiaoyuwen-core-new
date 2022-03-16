@@ -7,6 +7,8 @@ export default {
       Number: '数字',
       Text: '文本',
       Expression: '表达式',
+      Date: '日期',
+      DateTime: '日期时间',
       RichText: '富文本',
       Boolean: '布尔',
       Repeat: '重复',
@@ -72,6 +74,8 @@ export default {
       Number: 'Number',
       Text: 'Text',
       Expression: 'Expression',
+      Date: 'Date',
+      DateTime: 'DateTime',
       RichText: 'Rich Text',
       Position: 'Position',
       Repeat: 'Repeat',
@@ -129,4 +133,4 @@ export default {
       TextAlignJustify: 'Justify',
     },
   },
-}
+};

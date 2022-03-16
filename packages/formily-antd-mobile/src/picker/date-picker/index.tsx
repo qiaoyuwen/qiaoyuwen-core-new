@@ -39,6 +39,19 @@ const BaseDatePicker: FunctionComponent<IDatePickerProps> = ({ placeholder, form
   );
 };
 
-export const DatePicker: FunctionComponent<IDatePickerProps> = connect(BaseDatePicker);
+export const DatePicker: FunctionComponent<IDatePickerProps> = connect(
+  BaseDatePicker,
+  mapProps((props) => {
+    let value: any = props.value;
+    if (typeof value === 'string') {
+      value = dayjs(value).toDate();
+    }
+
+    return {
+      ...props,
+      value,
+    };
+  }),
+);
 
 export default DatePicker;

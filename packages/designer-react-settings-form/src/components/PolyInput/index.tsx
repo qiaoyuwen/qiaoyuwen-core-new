@@ -18,6 +18,7 @@ export interface IPolyType {
   title?: string
   icon?: string
   component?: any
+  props?: Record<PropertyKey, any>
   checker: (value: any) => boolean
   toInputValue?: (value: any) => any
   toChangeValue?: (value: any) => any
@@ -93,6 +94,7 @@ export function createPolyInput(polyTypes: PolyTypes = []): React.FC<IInput> {
           <div className={prefix + '-content'}>
             {React.createElement(component, {
               ...props,
+              ...type.props,
               value: type?.toInputValue ? type?.toInputValue(value) : value,
               onChange: (event: any) => {
                 const value = getEventValue(event)

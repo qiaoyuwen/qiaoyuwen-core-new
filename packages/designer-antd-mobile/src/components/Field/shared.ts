@@ -37,7 +37,7 @@ export const createComponentSchema = (component: ISchema, decorator: ISchema) =>
   };
 };
 
-type IValueInputType = 'TEXT' | 'EXPRESSION' | 'BOOLEAN' | 'NUMBER';
+type IValueInputType = 'TEXT' | 'EXPRESSION' | 'BOOLEAN' | 'NUMBER' | 'DATE' | 'DATETIME';
 
 export const createFieldSchema = (options: {
   component?: ISchema;

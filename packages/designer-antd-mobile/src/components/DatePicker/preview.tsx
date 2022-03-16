@@ -16,6 +16,7 @@ DatePicker.Behavior = createBehavior({
     propsSchema: createFieldSchema({
       component: AllSchemas.DatePicker,
       dataSourceSetter: false,
+      defaultValueInputType: ['DATE', 'DATETIME'],
     }),
   },
   designerLocales: AllLocales.DatePicker,

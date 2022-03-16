@@ -47,6 +47,7 @@ specifiers:
   antd-mobile-icons: ~0.2.2
   classnames: ~2.3.1
   dateformat: ~5.0.2
+  dayjs: ~1.10.8
   dumi: ^1.1.0
   eslint: ~8.5.0
   eslint-plugin-react-hooks: ~4.3.0
@@ -119,6 +120,7 @@ dependencies:
   antd-mobile-icons: 0.2.2
   classnames: 2.3.1
   dateformat: 5.0.3
+  dayjs: 1.10.8
   dumi: 1.1.39_e3f45c6911062452e7d7f9d47947b42f
   eslint: 8.5.0
   eslint-plugin-react-hooks: 4.3.0_eslint@8.5.0
@@ -19156,7 +19158,7 @@ packages:
     dev: false
 
   file:projects/designer-react-settings-form.tgz:
-    resolution: {integrity: sha512-0WUOtPfLeR05YyCYmC9Nl6T6eKs7N+fBd1ouoY2v24n+THgvD6eJQXtRSoeYft5XCq3OoAzhwN0UUhq53QN/Uw==, tarball: file:projects/designer-react-settings-form.tgz}
+    resolution: {integrity: sha512-wGYAWtidLMQe7M+R1jfwbN+s7laDg87U4Ox2ZjRofNp7Dkrn/THOL90hP6r5UsvgybCBxgXAhB7MMWmxp1HVUw==, tarball: file:projects/designer-react-settings-form.tgz}
     name: '@rush-temp/designer-react-settings-form'
     version: 0.0.0
     dependencies:
@@ -19173,6 +19175,7 @@ packages:
       '@types/react-dom': 17.0.13
       antd: 4.18.9_react-dom@17.0.2+react@17.0.2
       classnames: 2.3.1
+      moment: 2.29.1
       monaco-editor: 0.32.1
       react: 17.0.2
       react-color: 2.19.3_react@17.0.2
