@@ -194,7 +194,7 @@ export const DesignerToolsWidget: React.FC<IDesignerToolsWidgetProps> =
       <div style={props.style} className={cls(prefix, props.className)}>
         {renderHistoryController()}
         {renderCursorController()}
-        {renderScreenTypeController()}
+        {/* renderScreenTypeController() */}
         {renderMobileController()}
         {renderResponsiveController()}
       </div>

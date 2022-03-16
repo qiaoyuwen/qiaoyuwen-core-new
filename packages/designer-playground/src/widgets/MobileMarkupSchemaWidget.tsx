@@ -72,12 +72,24 @@ import {
   Slider,
   Stepper,
   Switch,
+  Checkbox,
+  Radio,
+  Rate,
+  DatePicker,
 } from '@qiaoyuwen-core-next/formily-antd-mobile'
 
 const SchemaField = createSchemaField({
   components: {
     FormItem,
     Input,
+    Selector,
+    Slider,
+    Stepper,
+    Switch,
+    Checkbox,
+    Radio,
+    Rate,
+    DatePicker,
   },
 })
 
