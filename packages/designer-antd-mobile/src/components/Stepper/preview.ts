@@ -14,6 +14,8 @@ Stepper.Behavior = createBehavior({
   designerProps: {
     propsSchema: createFieldSchema({
       component: AllSchemas.Stepper,
+      dataSourceSetter: false,
+      defaultValueInputType: 'NUMBER',
     }),
   },
   designerLocales: AllLocales.Stepper,

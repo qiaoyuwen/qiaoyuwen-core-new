@@ -14,6 +14,7 @@ Radio.Behavior = createBehavior({
   designerProps: {
     propsSchema: createFieldSchema({
       component: AllSchemas.Radio.Group,
+      defaultValueInputType: ['TEXT', 'NUMBER'],
     }),
   },
   designerLocales: AllLocales.RadioGroup,

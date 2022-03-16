@@ -29,11 +29,9 @@ export interface IRadioGroupProps extends RadioGroupProps {
   options: IRadioOption[];
 }
 
-const BaseRadioGroup: FunctionComponent<IRadioGroupProps> = (props) => {
-  const { options } = props;
-
+const BaseRadioGroup: FunctionComponent<IRadioGroupProps> = ({ options, ...props }) => {
   return (
-    <AntdMobileRadio.Group>
+    <AntdMobileRadio.Group {...props}>
       <Space direction="vertical">
         {options.map((option) => {
           return (

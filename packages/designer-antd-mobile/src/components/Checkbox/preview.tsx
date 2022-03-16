@@ -14,6 +14,7 @@ Checkbox.Behavior = createBehavior({
   designerProps: {
     propsSchema: createFieldSchema({
       component: AllSchemas.Checkbox.Group,
+      defaultValueInputType: 'EXPRESSION',
     }),
   },
   designerLocales: AllLocales.CheckboxGroup,

@@ -2,7 +2,7 @@ import { DatePicker as AntdMobileDatePicker } from 'antd-mobile';
 import { DatePickerProps } from 'antd-mobile/es/components/date-picker';
 import { FunctionComponent, ReactNode, useState } from 'react';
 import dayjs from 'dayjs';
-import { connect } from '@formily/react';
+import { connect, mapProps } from '@formily/react';
 import './index.less';
 
 export interface IDatePickerProps extends DatePickerProps {

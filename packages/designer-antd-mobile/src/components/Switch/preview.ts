@@ -14,6 +14,8 @@ Switch.Behavior = createBehavior({
   designerProps: {
     propsSchema: createFieldSchema({
       component: AllSchemas.Switch,
+      dataSourceSetter: false,
+      defaultValueInputType: 'BOOLEAN',
     }),
   },
   designerLocales: AllLocales.Switch,

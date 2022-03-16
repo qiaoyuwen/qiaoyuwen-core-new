@@ -15,6 +15,7 @@ Rate.Behavior = createBehavior({
     propsSchema: createFieldSchema({
       component: AllSchemas.Rate,
       dataSourceSetter: false,
+      defaultValueInputType: 'NUMBER',
     }),
   },
   designerLocales: AllLocales.Rate,

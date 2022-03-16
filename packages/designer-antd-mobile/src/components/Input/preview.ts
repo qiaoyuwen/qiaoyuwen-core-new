@@ -14,6 +14,8 @@ Input.Behavior = createBehavior({
   designerProps: {
     propsSchema: createFieldSchema({
       component: AllSchemas.Input,
+      dataSourceSetter: false,
+      defaultValueInputType: 'TEXT',
     }),
   },
   designerLocales: AllLocales.Input,

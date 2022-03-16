@@ -14,6 +14,8 @@ Slider.Behavior = createBehavior({
   designerProps: {
     propsSchema: createFieldSchema({
       component: AllSchemas.Slider,
+      dataSourceSetter: false,
+      defaultValueInputType: ['NUMBER', 'EXPRESSION'],
     }),
   },
   designerLocales: AllLocales.Slider,

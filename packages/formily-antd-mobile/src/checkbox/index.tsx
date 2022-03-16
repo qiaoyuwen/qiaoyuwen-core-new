@@ -29,11 +29,9 @@ export interface ICheckboxGroupProps extends CheckboxGroupProps {
   options: ICheckboxOption[];
 }
 
-const BaseCheckboxGroup: FunctionComponent<ICheckboxGroupProps> = (props) => {
-  const { options } = props;
-
+const BaseCheckboxGroup: FunctionComponent<ICheckboxGroupProps> = ({ options, ...props }) => {
   return (
-    <AntdMobileCheckbox.Group>
+    <AntdMobileCheckbox.Group {...props}>
       <Space direction="vertical">
         {options.map((option) => {
           return (

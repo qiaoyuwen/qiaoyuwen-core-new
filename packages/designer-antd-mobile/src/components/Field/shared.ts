@@ -37,12 +37,15 @@ export const createComponentSchema = (component: ISchema, decorator: ISchema) =>
   };
 };
 
+type IValueInputType = 'TEXT' | 'EXPRESSION' | 'BOOLEAN' | 'NUMBER';
+
 export const createFieldSchema = (options: {
   component?: ISchema;
   decorator?: ISchema;
   dataSourceSetter?: false | ReactNode;
+  defaultValueInputType?: IValueInputType | IValueInputType[];
 }): ISchema => {
-  const { component, decorator = AllSchemas.FormItem } = options;
+  const { component, decorator = AllSchemas.FormItem, defaultValueInputType } = options;
 
   let dataSourceSetter = options.dataSourceSetter;
   if (dataSourceSetter !== false && !dataSourceSetter) {
@@ -92,6 +95,11 @@ export const createFieldSchema = (options: {
           default: {
             'x-decorator': 'FormItem',
             'x-component': 'ValueInput',
+            'x-component-props': defaultValueInputType
+              ? {
+                  include: Array.isArray(defaultValueInputType) ? defaultValueInputType : [defaultValueInputType],
+                }
+              : undefined,
           },
           enum: dataSourceSetter
             ? {

@@ -15,6 +15,7 @@ DatePicker.Behavior = createBehavior({
   designerProps: {
     propsSchema: createFieldSchema({
       component: AllSchemas.DatePicker,
+      dataSourceSetter: false,
     }),
   },
   designerLocales: AllLocales.DatePicker,

@@ -14,6 +14,7 @@ Selector.Behavior = createBehavior({
   designerProps: {
     propsSchema: createFieldSchema({
       component: AllSchemas.Selector,
+      defaultValueInputType: 'EXPRESSION',
     }),
   },
   designerLocales: AllLocales.Selector,
