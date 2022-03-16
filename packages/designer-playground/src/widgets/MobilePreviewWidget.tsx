@@ -1,7 +1,19 @@
 import React, { useMemo } from 'react';
 import { createForm } from '@formily/core';
 import { createSchemaField } from '@formily/react';
-import { Form, FormItem, Input, Selector, Slider, Stepper, Switch } from '@qiaoyuwen-core-next/formily-antd-mobile';
+import {
+  Form,
+  FormItem,
+  Input,
+  Selector,
+  Slider,
+  Stepper,
+  Switch,
+  Checkbox,
+  Radio,
+  Rate,
+  DatePicker,
+} from '@qiaoyuwen-core-next/formily-antd-mobile';
 import { TreeNode } from '@qiaoyuwen-core-next/designer-core';
 import { transformToSchema } from '@qiaoyuwen-core-next/designer-transformer';
 
@@ -13,6 +25,10 @@ const SchemaField = createSchemaField({
     Slider,
     Stepper,
     Switch,
+    Checkbox,
+    Radio,
+    Rate,
+    DatePicker,
   },
 });
 
